@@ -44,7 +44,7 @@ test("Login test demo", async () => {
 
     // ログイン後、プロフィール画面へ行くか確認
     const newPage = await context.newPage();
-    newPage.goto("");
+    newPage.goto("https://ecommerce-playground.lambdatest.io/index.php?route...");
 
     await newPage.waitForTimeout(5000);
 })
