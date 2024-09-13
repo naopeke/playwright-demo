@@ -5,6 +5,9 @@ test("Login test demo", async () => {
     // chromium.launch() によってChromiumブラウザが非表示のヘッドレスモードで起動されます。
     // await を使って、ブラウザが起動するまで待機します。
     const browser = await chromium.launch();
+    // const browser = await chrimium.launch({
+    //     headless: false
+    // })
     
     // browser.newContext() は、新しいブラウザコンテキストを作成します。コンテキストは、独自のブラウザセッションを持ち、クッキーやローカルストレージなどのデータが他のコンテキストと分離されています。これにより、同じブラウザの中で複数のユーザーセッションをシミュレートできます。
     // await により、コンテキストの作成が完了するまで処理を待ちます。
@@ -32,4 +35,15 @@ test("Login test demo", async () => {
     await page.click("input[value='Login']");
 
     await page.waitForTimeout(5000);
+
+
+
+    // 新しいブラウザコンテキスト作成 こうするとログイン状態は保存されていない。同時にテストしたい場合は新しいブラウザコンテキストを作成するとよい
+    const newContext = await browser.newContext();
+
+    // ログイン後、プロフィール画面へ行くか確認
+    const newPage = await context.newPage();
+    newPage.goto("");
+
+    await newPage.waitForTimeout(5000);
 })
