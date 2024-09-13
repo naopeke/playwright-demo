@@ -28,8 +28,8 @@ test("Login test demo", async () => {
     await page.click("'Login'"); //上と同じ
 
     // ログインフォーム入力 CSS Selector
-    await page.fill("input[name='email']", "poke@poke.com");
-    await page.fill("input[name='password']", "password");
+    await page.fill("input[name='email']", "koushik350@gmail.com");
+    await page.fill("input[name='password']", "Pass123$");
 
     //　ログインボタン押下 CSS Selector
     await page.click("input[value='Login']");
@@ -44,7 +44,7 @@ test("Login test demo", async () => {
 
     // ログイン後、プロフィール画面へ行くか確認
     const newPage = await context.newPage();
-    newPage.goto("https://ecommerce-playground.lambdatest.io/index.php?route...");
+    newPage.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/account");
 
     await newPage.waitForTimeout(5000);
 })
