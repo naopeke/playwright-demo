@@ -109,18 +109,13 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 7374,
+                  "duration": 7730,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-13T10:43:54.552Z",
+                  "startTime": "2024-09-13T10:50:28.424Z",
                   "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/recorded-test-chromium/test-finished-1.png"
-                    },
                     {
                       "name": "video",
                       "contentType": "video/webm",
@@ -152,18 +147,13 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 9167,
+                  "duration": 7964,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-13T10:43:54.546Z",
+                  "startTime": "2024-09-13T10:50:28.426Z",
                   "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/recorded-test-firefox/test-finished-1.png"
-                    },
                     {
                       "name": "video",
                       "contentType": "video/webm",
@@ -208,7 +198,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-13T10:43:54.529Z",
+                  "startTime": "2024-09-13T10:50:28.423Z",
                   "attachments": []
                 }
               ],
@@ -225,8 +215,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-13T10:43:54.193Z",
-    "duration": 10591.365,
+    "startTime": "2024-09-13T10:50:28.058Z",
+    "duration": 9413.216,
     "expected": 2,
     "skipped": 0,
     "unexpected": 1,
