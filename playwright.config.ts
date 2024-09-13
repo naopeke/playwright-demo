@@ -34,6 +34,11 @@ export default defineConfig({
     /*リアルタイムでブラウザが開くようheadlessとactionTimeoutを追加*/
     headless: false,
     actionTimeout: 0,
+
+    /*スクリーンショットやビデオが自動的にdataフォルダに保存され、HTMLに表示される*/
+    screenshot: "only-on-failure",
+    video: "on", //retain-on-failure
+
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
 

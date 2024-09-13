@@ -109,13 +109,24 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 7885,
+                  "duration": 7374,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-13T10:32:50.621Z",
-                  "attachments": []
+                  "startTime": "2024-09-13T10:43:54.552Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/recorded-test-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/recorded-test-chromium/video.webm"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
@@ -141,13 +152,24 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 7875,
+                  "duration": 9167,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-13T10:32:50.618Z",
-                  "attachments": []
+                  "startTime": "2024-09-13T10:43:54.546Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/recorded-test-firefox/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/recorded-test-firefox/video.webm"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
@@ -173,7 +195,7 @@
                 {
                   "workerIndex": 2,
                   "status": "failed",
-                  "duration": 6,
+                  "duration": 4,
                   "error": {
                     "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libevent-2.1.so.7                                ║\n║     libflite.so.1                                    ║\n║     libflite_usenglish.so.1                          ║\n║     libflite_cmu_grapheme_lang.so.1                  ║\n║     libflite_cmu_grapheme_lex.so.1                   ║\n║     libflite_cmu_indic_lang.so.1                     ║\n║     libflite_cmu_indic_lex.so.1                      ║\n║     libflite_cmulex.so.1                             ║\n║     libflite_cmu_time_awb.so.1                       ║\n║     libflite_cmu_us_awb.so.1                         ║\n║     libflite_cmu_us_kal16.so.1                       ║\n║     libflite_cmu_us_kal.so.1                         ║\n║     libflite_cmu_us_rms.so.1                         ║\n║     libflite_cmu_us_slt.so.1                         ║\n╚══════════════════════════════════════════════════════╝",
                     "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libevent-2.1.so.7                                ║\n║     libflite.so.1                                    ║\n║     libflite_usenglish.so.1                          ║\n║     libflite_cmu_grapheme_lang.so.1                  ║\n║     libflite_cmu_grapheme_lex.so.1                   ║\n║     libflite_cmu_indic_lang.so.1                     ║\n║     libflite_cmu_indic_lex.so.1                      ║\n║     libflite_cmulex.so.1                             ║\n║     libflite_cmu_time_awb.so.1                       ║\n║     libflite_cmu_us_awb.so.1                         ║\n║     libflite_cmu_us_kal16.so.1                       ║\n║     libflite_cmu_us_kal.so.1                         ║\n║     libflite_cmu_us_rms.so.1                         ║\n║     libflite_cmu_us_slt.so.1                         ║\n╚══════════════════════════════════════════════════════╝"
@@ -186,7 +208,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-13T10:32:50.622Z",
+                  "startTime": "2024-09-13T10:43:54.529Z",
                   "attachments": []
                 }
               ],
@@ -203,8 +225,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-13T10:32:50.251Z",
-    "duration": 9341.079,
+    "startTime": "2024-09-13T10:43:54.193Z",
+    "duration": 10591.365,
     "expected": 2,
     "skipped": 0,
     "unexpected": 1,
