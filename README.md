@@ -2,9 +2,14 @@ npm init playwright@latest -- --quiet --browser=chromium --browser=firefox --bro
 
 https://www.youtube.com/watch?v=wawbt1cATsk&list=PLZMWkkQEwOPlS6BSWWqaAIrSNf_Gw4MQ1&index=2  
   
+## Login Test  
 https://ecommerce-playground.lambdatest.io/  
 
 npx playwright codegen  
   
 Actionability  
 https://playwright.dev/docs/actionability  
+  
+## Form Test  
+https://www.lambdatest.com/selenium-playground/simple-form-demo  
+
