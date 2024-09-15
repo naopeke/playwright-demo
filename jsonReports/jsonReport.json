@@ -109,16 +109,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 889,
+                  "duration": 803,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "Please enter your Message\n"
+                    },
+                    {
+                      "text": "Before entering data:\n"
+                    },
+                    {
+                      "text": "After entering data:Hello World\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-15T05:54:05.256Z",
+                  "startTime": "2024-09-15T06:09:25.361Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -151,16 +157,22 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 1125,
+                  "duration": 1177,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "Please enter your Message\n"
+                    },
+                    {
+                      "text": "Before entering data:\n"
+                    },
+                    {
+                      "text": "After entering data:Hello World\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-15T05:54:05.257Z",
+                  "startTime": "2024-09-15T06:09:25.361Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -206,7 +218,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-15T05:54:05.257Z",
+                  "startTime": "2024-09-15T06:09:25.362Z",
                   "attachments": []
                 }
               ],
@@ -223,8 +235,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-15T05:54:04.914Z",
-    "duration": 2581.546,
+    "startTime": "2024-09-15T06:09:25.024Z",
+    "duration": 2594.4469999999997,
     "expected": 2,
     "skipped": 0,
     "unexpected": 1,
