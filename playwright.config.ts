@@ -27,7 +27,7 @@ export default defineConfig({
   reporter: [["dot"], ["json", {
     outputFile: "jsonReports/jsonReport.json"
   }], ["html", {
-    open: "never"
+    open: "always" //neverにするとオープンにならない
   }]
   ],  
   
