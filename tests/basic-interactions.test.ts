@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-test("", async ({page}) => {
+test("Form", async ({page}) => {
     //ブラウザページをナビゲート
     await page.goto("https://www.lambdatest.com/selenium-playground/simple-form-demo");
     
