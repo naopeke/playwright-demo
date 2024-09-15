@@ -15,6 +15,6 @@ test("", async ({page}) => {
     expect(messageInput).toHaveAttribute("placeholder", "Please enter your Message");
     console.log(await messageInput.inputValue());
 
-    // await messageInput.type("Hello World");
+    // await messageInput.type("Hello World"); //Deprecated
     await messageInput.fill("Hello World");
 })
