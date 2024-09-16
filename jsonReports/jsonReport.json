@@ -95,7 +95,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "",
+          "title": "Sum",
           "ok": true,
           "tags": [],
           "tests": [
@@ -109,27 +109,21 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 803,
+                  "duration": 768,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Please enter your Message\n"
-                    },
-                    {
-                      "text": "Before entering data:\n"
-                    },
-                    {
-                      "text": "After entering data:Hello World\n"
+                      "text": "667\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-15T06:09:25.361Z",
+                  "startTime": "2024-09-16T09:37:36.713Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/basic-interactions--chromium/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/basic-interactions-Sum-chromium/video.webm"
                     }
                   ]
                 }
@@ -137,13 +131,13 @@
               "status": "expected"
             }
           ],
-          "id": "f53b68a9b54482b768fd-25b860c93f53910485f0",
+          "id": "f53b68a9b54482b768fd-029fb8448d1d8688cfac",
           "file": "basic-interactions.test.ts",
-          "line": 3,
+          "line": 34,
           "column": 5
         },
         {
-          "title": "",
+          "title": "Sum",
           "ok": true,
           "tags": [],
           "tests": [
@@ -157,27 +151,21 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 1177,
+                  "duration": 1316,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Please enter your Message\n"
-                    },
-                    {
-                      "text": "Before entering data:\n"
-                    },
-                    {
-                      "text": "After entering data:Hello World\n"
+                      "text": "667\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-15T06:09:25.361Z",
+                  "startTime": "2024-09-16T09:37:36.713Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/basic-interactions--firefox/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/basic-interactions-Sum-firefox/video.webm"
                     }
                   ]
                 }
@@ -185,13 +173,13 @@
               "status": "expected"
             }
           ],
-          "id": "f53b68a9b54482b768fd-778f50c0ae9236e9a85d",
+          "id": "f53b68a9b54482b768fd-da50c46baa025d6eb4c2",
           "file": "basic-interactions.test.ts",
-          "line": 3,
+          "line": 34,
           "column": 5
         },
         {
-          "title": "",
+          "title": "Sum",
           "ok": false,
           "tags": [],
           "tests": [
@@ -205,29 +193,29 @@
                 {
                   "workerIndex": 2,
                   "status": "failed",
-                  "duration": 4,
+                  "duration": 3,
                   "error": {
-                    "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libevent-2.1.so.7                                ║\n║     libflite.so.1                                    ║\n║     libflite_usenglish.so.1                          ║\n║     libflite_cmu_grapheme_lang.so.1                  ║\n║     libflite_cmu_grapheme_lex.so.1                   ║\n║     libflite_cmu_indic_lang.so.1                     ║\n║     libflite_cmu_indic_lex.so.1                      ║\n║     libflite_cmulex.so.1                             ║\n║     libflite_cmu_time_awb.so.1                       ║\n║     libflite_cmu_us_awb.so.1                         ║\n║     libflite_cmu_us_kal16.so.1                       ║\n║     libflite_cmu_us_kal.so.1                         ║\n║     libflite_cmu_us_rms.so.1                         ║\n║     libflite_cmu_us_slt.so.1                         ║\n╚══════════════════════════════════════════════════════╝",
-                    "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libevent-2.1.so.7                                ║\n║     libflite.so.1                                    ║\n║     libflite_usenglish.so.1                          ║\n║     libflite_cmu_grapheme_lang.so.1                  ║\n║     libflite_cmu_grapheme_lex.so.1                   ║\n║     libflite_cmu_indic_lang.so.1                     ║\n║     libflite_cmu_indic_lex.so.1                      ║\n║     libflite_cmulex.so.1                             ║\n║     libflite_cmu_time_awb.so.1                       ║\n║     libflite_cmu_us_awb.so.1                         ║\n║     libflite_cmu_us_kal16.so.1                       ║\n║     libflite_cmu_us_kal.so.1                         ║\n║     libflite_cmu_us_rms.so.1                         ║\n║     libflite_cmu_us_slt.so.1                         ║\n╚══════════════════════════════════════════════════════╝"
+                    "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
                   },
                   "errors": [
                     {
-                      "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libevent-2.1.so.7                                ║\n║     libflite.so.1                                    ║\n║     libflite_usenglish.so.1                          ║\n║     libflite_cmu_grapheme_lang.so.1                  ║\n║     libflite_cmu_grapheme_lex.so.1                   ║\n║     libflite_cmu_indic_lang.so.1                     ║\n║     libflite_cmu_indic_lex.so.1                      ║\n║     libflite_cmulex.so.1                             ║\n║     libflite_cmu_time_awb.so.1                       ║\n║     libflite_cmu_us_awb.so.1                         ║\n║     libflite_cmu_us_kal16.so.1                       ║\n║     libflite_cmu_us_kal.so.1                         ║\n║     libflite_cmu_us_rms.so.1                         ║\n║     libflite_cmu_us_slt.so.1                         ║\n╚══════════════════════════════════════════════════════╝"
+                      "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-15T06:09:25.362Z",
+                  "startTime": "2024-09-16T09:37:36.694Z",
                   "attachments": []
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "f53b68a9b54482b768fd-99ad99b88f79bb613992",
+          "id": "f53b68a9b54482b768fd-952b88c4b7d9b76d0b11",
           "file": "basic-interactions.test.ts",
-          "line": 3,
+          "line": 34,
           "column": 5
         }
       ]
@@ -235,8 +223,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-15T06:09:25.024Z",
-    "duration": 2594.4469999999997,
+    "startTime": "2024-09-16T09:37:36.369Z",
+    "duration": 2707.982,
     "expected": 2,
     "skipped": 0,
     "unexpected": 1,
