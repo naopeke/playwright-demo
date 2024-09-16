@@ -1,6 +1,10 @@
 import { expect, test } from '@playwright/test';
+import { log } from 'console';
 
-test("Form", async ({page}) => {
+/**
+ * Single Input Field
+ */
+test("Interaction with inputs", async ({ page }) => {
     //ブラウザページをナビゲート
     await page.goto("https://www.lambdatest.com/selenium-playground/simple-form-demo");
     
@@ -21,5 +25,28 @@ test("Form", async ({page}) => {
     // await messageInput.type("Hello World"); //Deprecated
     await messageInput.fill("Hello World");
     console.log('After entering data:' + await messageInput.inputValue());
+})
 
+
+/**
+ * Two Input Fields
+ */
+test("Sum", async ({ page })=> {
+    await page.goto("https://www.lambdatest.com/selenium-playground/simple-form-demo");
+    const sum1Input = page.locator("#sum1");
+    const sum2Input = page.locator("#sum2");
+
+    const getSumBtn = page.locator("form#gettotal>button");
+
+    let num1 = 121;
+    let num2 = 546;
+    await sum1Input.fill("" + num1); // string
+    await sum2Input.fill("" + num2); // string
+
+    getSumBtn.click();
+    
+    const result = page.locator("#addmessage");
+    console.log(await result.textContent());
+    let expectedResult = num1 + num2;
+    expect(result).toHaveText("" + expectedResult);
 })
