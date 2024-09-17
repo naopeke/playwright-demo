@@ -46,7 +46,6 @@ test("Sum", async ({ page })=> {
     await getSumBtn.click(); // クリックアクション完了を待つ
     
     const result = page.locator("#addmessage");
-    // await result.waitFor(); // テキストが表示されるまでに少し時間がかかる場合があります。expect(result).toHaveText() を使用する前に、ページが更新されるのを待つために、waitForSelector を使って要素が表示されるのを待つ。
     console.log(await result.textContent());
     let expectedResult = num1 + num2;
     expect(result).toHaveText("" + expectedResult);
