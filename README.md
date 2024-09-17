@@ -20,4 +20,7 @@ https://www.lambdatest.com/selenium-playground/checkbox-demo
 ## JavaScript Alerts  
 https://www.lambdatest.com/selenium-playground/javascript-alert-box-demo  
   
+## Bootstrap Model  
+https://www.lambdatest.com/selenium-playground/bootstrap-modal-demo  
+  
 ## 

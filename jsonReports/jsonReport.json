@@ -95,7 +95,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "prompt box",
+          "title": "bootstrap modal",
           "ok": true,
           "tags": [],
           "tests": [
@@ -109,21 +109,17 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 941,
+                  "duration": 1734,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Enter name\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-17T11:30:22.329Z",
+                  "startTime": "2024-09-17T16:13:04.925Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/alerts-prompt-box-chromium/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/alerts-bootstrap-modal-chromium/video.webm"
                     }
                   ]
                 }
@@ -131,13 +127,13 @@
               "status": "expected"
             }
           ],
-          "id": "d7bb30bede732e861350-775960f487c963488e4e",
+          "id": "d7bb30bede732e861350-39363e8a5e602d251f65",
           "file": "alerts.test.ts",
-          "line": 49,
-          "column": 5
+          "line": 73,
+          "column": 6
         },
         {
-          "title": "prompt box",
+          "title": "bootstrap modal",
           "ok": true,
           "tags": [],
           "tests": [
@@ -151,21 +147,17 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 1347,
+                  "duration": 2173,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Enter name\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-17T11:30:22.323Z",
+                  "startTime": "2024-09-17T16:13:04.928Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/alerts-prompt-box-firefox/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/alerts-bootstrap-modal-firefox/video.webm"
                     }
                   ]
                 }
@@ -173,13 +165,13 @@
               "status": "expected"
             }
           ],
-          "id": "d7bb30bede732e861350-4b391785af1f0168ec2b",
+          "id": "d7bb30bede732e861350-750eb8c23690d77eb8a8",
           "file": "alerts.test.ts",
-          "line": 49,
-          "column": 5
+          "line": 73,
+          "column": 6
         },
         {
-          "title": "prompt box",
+          "title": "bootstrap modal",
           "ok": false,
           "tags": [],
           "tests": [
@@ -193,7 +185,7 @@
                 {
                   "workerIndex": 2,
                   "status": "failed",
-                  "duration": 5,
+                  "duration": 4,
                   "error": {
                     "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
                     "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
@@ -206,25 +198,25 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-17T11:30:22.332Z",
+                  "startTime": "2024-09-17T16:13:04.925Z",
                   "attachments": []
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "d7bb30bede732e861350-651df1cd008d7fdd4bcc",
+          "id": "d7bb30bede732e861350-f56b832b9b206c9e8247",
           "file": "alerts.test.ts",
-          "line": 49,
-          "column": 5
+          "line": 73,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-17T11:30:21.968Z",
-    "duration": 2741.099,
+    "startTime": "2024-09-17T16:13:04.570Z",
+    "duration": 3578.964,
     "expected": 2,
     "skipped": 0,
     "unexpected": 1,
