@@ -54,6 +54,7 @@ test("prompt box", async({ page }) => {
         await cookieConsentButton.click();
     }
 
+    //page.on("dialog", callback) ページでダイアログ（アラートalert()、確認confirm()、プロンプトprompt()など）が発生するたびに呼び出されるリスナーを設定
     page.on("dialog", async(alert) => {
         const text = alert.defaultValue();
         console.log(text);
@@ -61,6 +62,6 @@ test("prompt box", async({ page }) => {
     })
 
     await page.getByText("Click Me").nth(2).click();
-    expect(page.locator("#prompt-demo")).toContainText("'nao'");
+    await expect(page.locator("#prompt-demo")).toContainText("nao");
 
 })
