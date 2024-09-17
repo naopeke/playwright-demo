@@ -13,3 +13,5 @@ https://playwright.dev/docs/actionability
 ## Form Test  
 https://www.lambdatest.com/selenium-playground/simple-form-demo  
 
+## Checkbox Test
+https://www.lambdatest.com/selenium-playground/checkbox-demo
