@@ -7,11 +7,17 @@ https://ecommerce-playground.lambdatest.io/
 
 npx playwright codegen  
   
-Actionability  
+## Actionability  
 https://playwright.dev/docs/actionability  
   
 ## Form Test  
+https://www.lambdatest.com/selenium-playground/  
 https://www.lambdatest.com/selenium-playground/simple-form-demo  
+  
+## Checkbox Test  
+https://www.lambdatest.com/selenium-playground/checkbox-demo  
 
-## Checkbox Test
-https://www.lambdatest.com/selenium-playground/checkbox-demo
+## JavaScript Alerts  
+https://www.lambdatest.com/selenium-playground/javascript-alert-box-demo  
+  
+## 

@@ -74,5 +74,5 @@ export default defineConfig({
   // },
 
   /* 実行するテストファイルを指定 npx playwright testで表示*/
-  testMatch: ["tests/basic-interactions.test.ts"],
+  testMatch: ["tests/alerts.test.ts"],
 });
