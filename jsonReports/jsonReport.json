@@ -109,7 +109,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 3951,
+                  "duration": 3916,
                   "errors": [],
                   "stdout": [
                     {
@@ -118,7 +118,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-18T14:09:18.804Z",
+                  "startTime": "2024-09-18T14:12:44.328Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -156,7 +156,7 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 4466,
+                  "duration": 4325,
                   "errors": [],
                   "stdout": [
                     {
@@ -165,7 +165,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-18T14:09:18.804Z",
+                  "startTime": "2024-09-18T14:12:44.332Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -203,7 +203,7 @@
                 {
                   "workerIndex": 2,
                   "status": "failed",
-                  "duration": 5,
+                  "duration": 4,
                   "error": {
                     "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
                     "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
@@ -216,7 +216,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-18T14:09:18.808Z",
+                  "startTime": "2024-09-18T14:12:44.331Z",
                   "attachments": []
                 }
               ],
@@ -233,8 +233,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-18T14:09:18.464Z",
-    "duration": 5845.073,
+    "startTime": "2024-09-18T14:12:43.996Z",
+    "duration": 5776.047,
     "expected": 2,
     "skipped": 0,
     "unexpected": 1,
