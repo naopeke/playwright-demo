@@ -95,7 +95,7 @@
       "line": 0,
       "specs": [
         {
-          "title": " Jquery single select",
+          "title": "Jquery single select 2",
           "ok": true,
           "tags": [],
           "tests": [
@@ -109,26 +109,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 3916,
+                  "duration": 1050,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Japan\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-18T14:12:44.328Z",
+                  "startTime": "2024-09-18T14:19:57.240Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/dropdown--Jquery-single-select-chromium/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/dropdown-Jquery-single-select-2-chromium/test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/dropdown--Jquery-single-select-chromium/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/dropdown-Jquery-single-select-2-chromium/video.webm"
                     }
                   ]
                 }
@@ -136,13 +132,13 @@
               "status": "expected"
             }
           ],
-          "id": "f07a5f1725d716cfd55e-8fa74cf17b825f9ec6af",
+          "id": "f07a5f1725d716cfd55e-23cb0acee143d9f91844",
           "file": "dropdown.test.ts",
-          "line": 46,
+          "line": 68,
           "column": 6
         },
         {
-          "title": " Jquery single select",
+          "title": "Jquery single select 2",
           "ok": true,
           "tags": [],
           "tests": [
@@ -156,26 +152,22 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 4325,
+                  "duration": 1707,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Japan\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-18T14:12:44.332Z",
+                  "startTime": "2024-09-18T14:19:57.245Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/dropdown--Jquery-single-select-firefox/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/dropdown-Jquery-single-select-2-firefox/test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/dropdown--Jquery-single-select-firefox/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/dropdown-Jquery-single-select-2-firefox/video.webm"
                     }
                   ]
                 }
@@ -183,13 +175,13 @@
               "status": "expected"
             }
           ],
-          "id": "f07a5f1725d716cfd55e-cd79e8f94d74913ff609",
+          "id": "f07a5f1725d716cfd55e-acbeecdee6bc1011d503",
           "file": "dropdown.test.ts",
-          "line": 46,
+          "line": 68,
           "column": 6
         },
         {
-          "title": " Jquery single select",
+          "title": "Jquery single select 2",
           "ok": false,
           "tags": [],
           "tests": [
@@ -203,7 +195,7 @@
                 {
                   "workerIndex": 2,
                   "status": "failed",
-                  "duration": 4,
+                  "duration": 5,
                   "error": {
                     "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
                     "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
@@ -216,16 +208,16 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-18T14:12:44.331Z",
+                  "startTime": "2024-09-18T14:19:57.238Z",
                   "attachments": []
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "f07a5f1725d716cfd55e-b508c50cc7032bb7e48f",
+          "id": "f07a5f1725d716cfd55e-a48a5cc7d084c9ffc5dd",
           "file": "dropdown.test.ts",
-          "line": 46,
+          "line": 68,
           "column": 6
         }
       ]
@@ -233,8 +225,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-18T14:12:43.996Z",
-    "duration": 5776.047,
+    "startTime": "2024-09-18T14:19:56.900Z",
+    "duration": 3182.861,
     "expected": 2,
     "skipped": 0,
     "unexpected": 1,

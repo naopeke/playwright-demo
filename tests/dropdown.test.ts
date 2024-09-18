@@ -43,7 +43,7 @@ test("dropdown multiple select", async ({ page }) =>{
 })
 
 
-test.only(" Jquery single select", async ({ page }) => {
+test("Jquery single select 1", async ({ page }) => {
     await page.goto("https://www.lambdatest.com/selenium-playground/jquery-dropdown-search-demo");
 
     const cookieConsentButton = page.locator("#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll");
@@ -62,5 +62,24 @@ test.only(" Jquery single select", async ({ page }) => {
     console.log(selectedValue);
 
     expect(selectedValue.trim()).toBe("Japan");
+    })
+
+
+test.only("Jquery single select 2", async ({ page }) => {
+    await page.goto("https://www.lambdatest.com/selenium-playground/jquery-dropdown-search-demo");
+
+    const cookieConsentButton = page.locator("#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll");
+    if (await cookieConsentButton.isVisible()){
+        await cookieConsentButton.click();
+    }
+
+    await selectCountry("Japan");
+    await selectCountry("India");
+    await selectCountry("Hong Kong")
+
+    async function selectCountry(countryName: string){
+        await page.click("#country+span");
+        await page.locator("ul#select2-country-results").locator("li", { hasText: countryName }).click();
+    }
     })
 
