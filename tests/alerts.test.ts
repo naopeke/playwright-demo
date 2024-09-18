@@ -68,7 +68,6 @@ test("prompt box", async({ page }) => {
 
 /**
  * Bootstrap Modal
- * 1:43:39
  */
 test.only("bootstrap modal", async({ page }) => {
     await page.goto("https://www.lambdatest.com/selenium-playground/bootstrap-modal-demo");
@@ -81,13 +80,3 @@ test.only("bootstrap modal", async({ page }) => {
     await page.click("//button[@data-target='#myModal']");
     await page.click("(//button[@data-dismiss='modal']/following-sibling::button)[1]");  
 })
-
-
-/**
- * Bootstrap Modal
- * 1:43:39
- */
-// test("bootstrap modal", async({ page }) => {
-//     page.goto("https://www.lambdatest.com/selenium-playground/bootstrap-modal-demo");
-
-// })

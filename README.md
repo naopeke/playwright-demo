@@ -23,4 +23,7 @@ https://www.lambdatest.com/selenium-playground/javascript-alert-box-demo
 ## Bootstrap Model  
 https://www.lambdatest.com/selenium-playground/bootstrap-modal-demo  
   
+## Dropdown  
+https://www.lambdatest.com/selenium-playground/select-dropdown-demo  
+  
 ## 
