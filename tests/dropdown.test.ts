@@ -52,11 +52,11 @@ test.only(" Jquery single select", async ({ page }) => {
     }
 
     await page.click("#country+span");
-
+    // オプションを選択
     await page.locator("ul#select2-country-results li.select2-results__option", { hasText: "Japan"}).click();
     // UIが更新されるまで待機
     await page.waitForTimeout(3000);
-
+    // 選択されたオプションがマッチするか
     const selectedValue = await page.locator("#select2-country-container").innerText();
     console.log(selectedValue);
 
