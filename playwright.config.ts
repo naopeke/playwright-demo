@@ -40,8 +40,11 @@ export default defineConfig({
     /*スクリーンショットやビデオが自動的にdataフォルダに保存され、HTMLに表示される*/
     screenshot: "on", //"only-on-failure"
     video: "on", // "retain-on-failure"
+    launchOptions: {
+      slowMo: 1000 // 表示スピードを遅くする
+    },
 
-    /* Base URL to use in actions like `await page.goto('/')`. */
+    /* Base URL to use in actions like `await page.goto('/')`. */ 
     // baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
