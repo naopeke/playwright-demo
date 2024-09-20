@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 8
+      "actualWorkers": 3
     },
     "preserveOutput": "always",
     "reporter": [
@@ -48,7 +48,7 @@
         "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
         "testIgnore": [],
         "testMatch": [
-          "tests/frames.test.ts"
+          "tests/windows.test.ts"
         ],
         "timeout": 30000
       },
@@ -62,7 +62,7 @@
         "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
         "testIgnore": [],
         "testMatch": [
-          "tests/frames.test.ts"
+          "tests/windows.test.ts"
         ],
         "timeout": 30000
       },
@@ -76,7 +76,7 @@
         "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
         "testIgnore": [],
         "testMatch": [
-          "tests/frames.test.ts"
+          "tests/windows.test.ts"
         ],
         "timeout": 30000
       }
@@ -89,13 +89,13 @@
   },
   "suites": [
     {
-      "title": "frames.test.ts",
-      "file": "frames.test.ts",
+      "title": "windows.test.ts",
+      "file": "windows.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Interact with frames 1",
+          "title": "Interact with multiple tabs",
           "ok": true,
           "tags": [],
           "tests": [
@@ -109,26 +109,36 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 9844,
+                  "duration": 4210,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "No.of frame: 17\n"
+                      "text": "https://twitter.com/x/migrate?tok=7b2265223a222f4c616d62646174657374696e67222c2274223a313732363832373733317d5d3b419af7373647319795db30c83b35\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-20T09:50:09.091Z",
+                  "startTime": "2024-09-20T10:22:08.469Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Interact-with-frames-1-chromium/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Interact-with-multiple-tabs-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Interact-with-multiple-tabs-chromium/test-finished-2.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Interact-with-frames-1-chromium/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Interact-with-multiple-tabs-chromium/video-1.webm"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Interact-with-multiple-tabs-chromium/video.webm"
                     }
                   ]
                 }
@@ -136,13 +146,13 @@
               "status": "expected"
             }
           ],
-          "id": "33eda82cbd1adf3e5e80-954137ef132a4c309ce3",
-          "file": "frames.test.ts",
+          "id": "9f9e501b862ea12467e2-3976302e8aa17498a9ec",
+          "file": "windows.test.ts",
           "line": 3,
           "column": 5
         },
         {
-          "title": "Interact with frames 2",
+          "title": "Interact with multiple tabs",
           "ok": true,
           "tags": [],
           "tests": [
@@ -150,32 +160,42 @@
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
+              "projectId": "firefox",
+              "projectName": "firefox",
               "results": [
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 9620,
+                  "duration": 5006,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "No.of frame: 17\n"
+                      "text": "https://x.com/Lambdatesting?mx=2\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-20T09:50:09.127Z",
+                  "startTime": "2024-09-20T10:22:08.479Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Interact-with-frames-2-chromium/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Interact-with-multiple-tabs-firefox/test-finished-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Interact-with-multiple-tabs-firefox/test-finished-2.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Interact-with-frames-2-chromium/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Interact-with-multiple-tabs-firefox/video-1.webm"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Interact-with-multiple-tabs-firefox/video.webm"
                     }
                   ]
                 }
@@ -183,317 +203,49 @@
               "status": "expected"
             }
           ],
-          "id": "33eda82cbd1adf3e5e80-fbf2b488c49c351f3a89",
-          "file": "frames.test.ts",
-          "line": 19,
+          "id": "9f9e501b862ea12467e2-24cb5525fca71bb50e49",
+          "file": "windows.test.ts",
+          "line": 3,
           "column": 5
         },
         {
-          "title": "Nested frames",
-          "ok": true,
+          "title": "Interact with multiple tabs",
+          "ok": false,
           "tags": [],
           "tests": [
             {
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
+              "projectId": "webkit",
+              "projectName": "webkit",
               "results": [
                 {
                   "workerIndex": 2,
-                  "status": "passed",
-                  "duration": 5928,
-                  "errors": [],
-                  "stdout": [
+                  "status": "failed",
+                  "duration": 4,
+                  "error": {
+                    "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
                     {
-                      "text": "No.of frame: 17\n"
+                      "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
                     }
                   ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-20T09:50:09.151Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Nested-frames-chromium/test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Nested-frames-chromium/video.webm"
-                    }
-                  ]
+                  "startTime": "2024-09-20T10:22:08.475Z",
+                  "attachments": []
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "33eda82cbd1adf3e5e80-a5f0cb2159407a5c47e2",
-          "file": "frames.test.ts",
-          "line": 32,
-          "column": 5
-        },
-        {
-          "title": "Interact with frames 1",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "status": "passed",
-                  "duration": 10554,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "No.of frame: 17\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-20T09:50:09.115Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Interact-with-frames-1-firefox/test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Interact-with-frames-1-firefox/video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "33eda82cbd1adf3e5e80-375192edc39d945a908d",
-          "file": "frames.test.ts",
+          "id": "9f9e501b862ea12467e2-a2cb8b7c76ca02f47fd5",
+          "file": "windows.test.ts",
           "line": 3,
-          "column": 5
-        },
-        {
-          "title": "Interact with frames 2",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "status": "passed",
-                  "duration": 10569,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "No.of frame: 17\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-20T09:50:09.059Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Interact-with-frames-2-firefox/test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Interact-with-frames-2-firefox/video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "33eda82cbd1adf3e5e80-6e942e0fb958f30bcf13",
-          "file": "frames.test.ts",
-          "line": 19,
-          "column": 5
-        },
-        {
-          "title": "Nested frames",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "status": "passed",
-                  "duration": 6403,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "No.of frame: 17\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-20T09:50:09.156Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Nested-frames-firefox/test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Nested-frames-firefox/video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "33eda82cbd1adf3e5e80-0113ef14a386859943f5",
-          "file": "frames.test.ts",
-          "line": 32,
-          "column": 5
-        },
-        {
-          "title": "Interact with frames 1",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 6,
-                  "status": "failed",
-                  "duration": 8,
-                  "error": {
-                    "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
-                    "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
-                  },
-                  "errors": [
-                    {
-                      "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-20T09:50:09.122Z",
-                  "attachments": []
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "33eda82cbd1adf3e5e80-385a4f00c9aaa8a05c6b",
-          "file": "frames.test.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "Interact with frames 2",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 7,
-                  "status": "failed",
-                  "duration": 9,
-                  "error": {
-                    "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
-                    "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
-                  },
-                  "errors": [
-                    {
-                      "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-20T09:50:09.190Z",
-                  "attachments": []
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "33eda82cbd1adf3e5e80-333aa419c19e753dd2e7",
-          "file": "frames.test.ts",
-          "line": 19,
-          "column": 5
-        },
-        {
-          "title": "Nested frames",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 8,
-                  "status": "failed",
-                  "duration": 8,
-                  "error": {
-                    "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
-                    "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
-                  },
-                  "errors": [
-                    {
-                      "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-20T09:50:10.212Z",
-                  "attachments": []
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "33eda82cbd1adf3e5e80-28dc8dc3910682440709",
-          "file": "frames.test.ts",
-          "line": 32,
           "column": 5
         }
       ]
@@ -501,11 +253,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-20T09:50:08.584Z",
-    "duration": 12705.74,
-    "expected": 6,
+    "startTime": "2024-09-20T10:22:08.143Z",
+    "duration": 6430.072999999999,
+    "expected": 2,
     "skipped": 0,
-    "unexpected": 3,
+    "unexpected": 1,
     "flaky": 0
   }
 }

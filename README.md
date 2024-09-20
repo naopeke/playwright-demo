@@ -29,4 +29,8 @@ https://www.lambdatest.com/selenium-playground/select-dropdown-demo
   
 ## Frame  
 https://letcode.in/frame  
+  
+## Window popup Modal  
+https://www.lambdatest.com/selenium-playground/window-popup-modal-demo  
+
 　
