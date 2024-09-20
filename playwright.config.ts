@@ -77,5 +77,5 @@ export default defineConfig({
   // },
 
   /* 実行するテストファイルを指定 npx playwright testで表示*/
-  testMatch: ["tests/dropdown.test.ts"],
+  testMatch: ["tests/frames.test.ts"],
 });

@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 3
+      "actualWorkers": 8
     },
     "preserveOutput": "always",
     "reporter": [
@@ -48,7 +48,7 @@
         "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
         "testIgnore": [],
         "testMatch": [
-          "tests/dropdown.test.ts"
+          "tests/frames.test.ts"
         ],
         "timeout": 30000
       },
@@ -62,7 +62,7 @@
         "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
         "testIgnore": [],
         "testMatch": [
-          "tests/dropdown.test.ts"
+          "tests/frames.test.ts"
         ],
         "timeout": 30000
       },
@@ -76,7 +76,7 @@
         "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
         "testIgnore": [],
         "testMatch": [
-          "tests/dropdown.test.ts"
+          "tests/frames.test.ts"
         ],
         "timeout": 30000
       }
@@ -89,13 +89,13 @@
   },
   "suites": [
     {
-      "title": "dropdown.test.ts",
-      "file": "dropdown.test.ts",
+      "title": "frames.test.ts",
+      "file": "frames.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Jquery single select 2",
+          "title": "Interact with frames 1",
           "ok": true,
           "tags": [],
           "tests": [
@@ -109,22 +109,26 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 1050,
+                  "duration": 9844,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "No.of frame: 17\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-18T14:19:57.240Z",
+                  "startTime": "2024-09-20T09:50:09.091Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/dropdown-Jquery-single-select-2-chromium/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Interact-with-frames-1-chromium/test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/dropdown-Jquery-single-select-2-chromium/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Interact-with-frames-1-chromium/video.webm"
                     }
                   ]
                 }
@@ -132,13 +136,107 @@
               "status": "expected"
             }
           ],
-          "id": "f07a5f1725d716cfd55e-23cb0acee143d9f91844",
-          "file": "dropdown.test.ts",
-          "line": 68,
-          "column": 6
+          "id": "33eda82cbd1adf3e5e80-954137ef132a4c309ce3",
+          "file": "frames.test.ts",
+          "line": 3,
+          "column": 5
         },
         {
-          "title": "Jquery single select 2",
+          "title": "Interact with frames 2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 9620,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "No.of frame: 17\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-20T09:50:09.127Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Interact-with-frames-2-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Interact-with-frames-2-chromium/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "33eda82cbd1adf3e5e80-fbf2b488c49c351f3a89",
+          "file": "frames.test.ts",
+          "line": 19,
+          "column": 5
+        },
+        {
+          "title": "Nested frames",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 5928,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "No.of frame: 17\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-20T09:50:09.151Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Nested-frames-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Nested-frames-chromium/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "33eda82cbd1adf3e5e80-a5f0cb2159407a5c47e2",
+          "file": "frames.test.ts",
+          "line": 32,
+          "column": 5
+        },
+        {
+          "title": "Interact with frames 1",
           "ok": true,
           "tags": [],
           "tests": [
@@ -150,24 +248,28 @@
               "projectName": "firefox",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 3,
                   "status": "passed",
-                  "duration": 1707,
+                  "duration": 10554,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "No.of frame: 17\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-18T14:19:57.245Z",
+                  "startTime": "2024-09-20T09:50:09.115Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/dropdown-Jquery-single-select-2-firefox/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Interact-with-frames-1-firefox/test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/dropdown-Jquery-single-select-2-firefox/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Interact-with-frames-1-firefox/video.webm"
                     }
                   ]
                 }
@@ -175,13 +277,107 @@
               "status": "expected"
             }
           ],
-          "id": "f07a5f1725d716cfd55e-acbeecdee6bc1011d503",
-          "file": "dropdown.test.ts",
-          "line": 68,
-          "column": 6
+          "id": "33eda82cbd1adf3e5e80-375192edc39d945a908d",
+          "file": "frames.test.ts",
+          "line": 3,
+          "column": 5
         },
         {
-          "title": "Jquery single select 2",
+          "title": "Interact with frames 2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 10569,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "No.of frame: 17\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-20T09:50:09.059Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Interact-with-frames-2-firefox/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Interact-with-frames-2-firefox/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "33eda82cbd1adf3e5e80-6e942e0fb958f30bcf13",
+          "file": "frames.test.ts",
+          "line": 19,
+          "column": 5
+        },
+        {
+          "title": "Nested frames",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "passed",
+                  "duration": 6403,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "No.of frame: 17\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-20T09:50:09.156Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Nested-frames-firefox/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/frames-Nested-frames-firefox/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "33eda82cbd1adf3e5e80-0113ef14a386859943f5",
+          "file": "frames.test.ts",
+          "line": 32,
+          "column": 5
+        },
+        {
+          "title": "Interact with frames 1",
           "ok": false,
           "tags": [],
           "tests": [
@@ -193,9 +389,9 @@
               "projectName": "webkit",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 6,
                   "status": "failed",
-                  "duration": 5,
+                  "duration": 8,
                   "error": {
                     "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
                     "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
@@ -208,28 +404,108 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-18T14:19:57.238Z",
+                  "startTime": "2024-09-20T09:50:09.122Z",
                   "attachments": []
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "f07a5f1725d716cfd55e-a48a5cc7d084c9ffc5dd",
-          "file": "dropdown.test.ts",
-          "line": 68,
-          "column": 6
+          "id": "33eda82cbd1adf3e5e80-385a4f00c9aaa8a05c6b",
+          "file": "frames.test.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Interact with frames 2",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "status": "failed",
+                  "duration": 9,
+                  "error": {
+                    "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-20T09:50:09.190Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "33eda82cbd1adf3e5e80-333aa419c19e753dd2e7",
+          "file": "frames.test.ts",
+          "line": 19,
+          "column": 5
+        },
+        {
+          "title": "Nested frames",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "status": "failed",
+                  "duration": 8,
+                  "error": {
+                    "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-20T09:50:10.212Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "33eda82cbd1adf3e5e80-28dc8dc3910682440709",
+          "file": "frames.test.ts",
+          "line": 32,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-18T14:19:56.900Z",
-    "duration": 3182.861,
-    "expected": 2,
+    "startTime": "2024-09-20T09:50:08.584Z",
+    "duration": 12705.74,
+    "expected": 6,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 3,
     "flaky": 0
   }
 }
