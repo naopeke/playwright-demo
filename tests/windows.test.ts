@@ -45,4 +45,6 @@ test.only("Multiple window modal", async ({ page }) => {
     pages.forEach(tab =>{
         console.log(tab.url())
     })
+
+    // await pages[1].fill("", "nao");
 })
