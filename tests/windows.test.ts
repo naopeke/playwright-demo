@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, Page } from '@playwright/test';
 
 test("Interact with multiple tabs", async ({ page }) => {
     await page.goto("https://www.lambdatest.com/selenium-playground/window-popup-modal-demo")
@@ -45,6 +45,23 @@ test.only("Multiple window modal", async ({ page }) => {
     pages.forEach(tab =>{
         console.log(tab.url())
     })
+
+    let facebookPage: Page | undefined; 
+    for (let i = 0; i < pages.length; i++ ){
+        const url = pages[i].url();
+        if(url == "https://www.facebook.com/lambdatest/"){
+            facebookPage = pages[i];
+            break;  // オプション: ページが見つかったらループを抜ける
+        }
+    }
+    
+    if (facebookPage){
+        const text = await facebookPage.textContent("//h1")
+        console.log(text);
+    } else {
+        console.log("Couldn't find facebook page")
+    }
+
 
     // await pages[1].fill("", "nao");
 })

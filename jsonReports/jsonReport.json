@@ -109,7 +109,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 5272,
+                  "duration": 4112,
                   "errors": [],
                   "stdout": [
                     {
@@ -125,22 +125,25 @@
                       "text": "https://www.facebook.com/lambdatest/\n"
                     },
                     {
-                      "text": "https://x.com/intent/follow?screen_name=Lambdatesting&mx=2\n"
+                      "text": "https://twitter.com/x/migrate?tok=7b2265223a222f696e74656e742f666f6c6c6f773f73637265656e5f6e616d653d4c616d62646174657374696e67222c2274223a313732373137333535367d4c8e7caae2e42e13864eb98cedb106f7\n"
+                    },
+                    {
+                      "text": "LambdaTest \n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-24T10:12:25.869Z",
+                  "startTime": "2024-09-24T10:25:52.755Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-chromium/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-chromium/test-finished-2.png"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-chromium/test-finished-2.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-chromium/test-finished-1.png"
                     },
                     {
                       "name": "screenshot",
@@ -188,7 +191,7 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 4900,
+                  "duration": 4627,
                   "errors": [],
                   "stdout": [
                     {
@@ -204,12 +207,15 @@
                       "text": "https://www.facebook.com/lambdatest/\n"
                     },
                     {
-                      "text": "https://twitter.com/x/migrate?tok=7b2265223a222f696e74656e742f666f6c6c6f773f73637265656e5f6e616d653d4c616d62646174657374696e67222c2274223a313732373137323735307d49787df8bbb090d2de9475aa105a4348\n"
+                      "text": "https://twitter.com/x/migrate?tok=7b2265223a222f696e74656e742f666f6c6c6f773f73637265656e5f6e616d653d4c616d62646174657374696e67222c2274223a313732373137333535377da15170af241183da4e5334642600a507\n"
+                    },
+                    {
+                      "text": "LambdaTest \n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-24T10:12:25.868Z",
+                  "startTime": "2024-09-24T10:25:52.755Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -219,12 +225,12 @@
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/test-finished-2.png"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/test-finished-2.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/test-finished-1.png"
                     },
                     {
                       "name": "video",
@@ -234,12 +240,12 @@
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/video-1.webm"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/video-1.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/video.webm"
                     }
                   ]
                 }
@@ -280,7 +286,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-24T10:12:25.865Z",
+                  "startTime": "2024-09-24T10:25:52.762Z",
                   "attachments": []
                 }
               ],
@@ -297,8 +303,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-24T10:12:25.519Z",
-    "duration": 6423.121,
+    "startTime": "2024-09-24T10:25:52.426Z",
+    "duration": 6017.4980000000005,
     "expected": 2,
     "skipped": 0,
     "unexpected": 1,
