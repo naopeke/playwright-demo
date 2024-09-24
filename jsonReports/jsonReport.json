@@ -95,7 +95,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "Interact with multiple tabs",
+          "title": "Multiple window modal",
           "ok": true,
           "tags": [],
           "tests": [
@@ -109,36 +109,58 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 4210,
+                  "duration": 5272,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "https://twitter.com/x/migrate?tok=7b2265223a222f4c616d62646174657374696e67222c2274223a313732363832373733317d5d3b419af7373647319795db30c83b35\n"
+                      "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
+                    },
+                    {
+                      "text": "No. of tabs: \u001b[33m3\u001b[39m\n"
+                    },
+                    {
+                      "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
+                    },
+                    {
+                      "text": "https://www.facebook.com/lambdatest/\n"
+                    },
+                    {
+                      "text": "https://x.com/intent/follow?screen_name=Lambdatesting&mx=2\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-20T10:22:08.469Z",
+                  "startTime": "2024-09-24T10:12:25.869Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Interact-with-multiple-tabs-chromium/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-chromium/test-finished-1.png"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Interact-with-multiple-tabs-chromium/test-finished-2.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-chromium/test-finished-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-chromium/test-finished-3.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Interact-with-multiple-tabs-chromium/video-1.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-chromium/video-2.webm"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Interact-with-multiple-tabs-chromium/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-chromium/video-1.webm"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-chromium/video.webm"
                     }
                   ]
                 }
@@ -146,13 +168,13 @@
               "status": "expected"
             }
           ],
-          "id": "9f9e501b862ea12467e2-3976302e8aa17498a9ec",
+          "id": "9f9e501b862ea12467e2-e553d2ccb3f4c8d3895e",
           "file": "windows.test.ts",
-          "line": 3,
-          "column": 5
+          "line": 23,
+          "column": 6
         },
         {
-          "title": "Interact with multiple tabs",
+          "title": "Multiple window modal",
           "ok": true,
           "tags": [],
           "tests": [
@@ -166,36 +188,58 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 5006,
+                  "duration": 4900,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "https://x.com/Lambdatesting?mx=2\n"
+                      "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
+                    },
+                    {
+                      "text": "No. of tabs: \u001b[33m3\u001b[39m\n"
+                    },
+                    {
+                      "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
+                    },
+                    {
+                      "text": "https://www.facebook.com/lambdatest/\n"
+                    },
+                    {
+                      "text": "https://twitter.com/x/migrate?tok=7b2265223a222f696e74656e742f666f6c6c6f773f73637265656e5f6e616d653d4c616d62646174657374696e67222c2274223a313732373137323735307d49787df8bbb090d2de9475aa105a4348\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-20T10:22:08.479Z",
+                  "startTime": "2024-09-24T10:12:25.868Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Interact-with-multiple-tabs-firefox/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/test-finished-3.png"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Interact-with-multiple-tabs-firefox/test-finished-2.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/test-finished-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/test-finished-2.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Interact-with-multiple-tabs-firefox/video-1.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/video-2.webm"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Interact-with-multiple-tabs-firefox/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/video.webm"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/video-1.webm"
                     }
                   ]
                 }
@@ -203,13 +247,13 @@
               "status": "expected"
             }
           ],
-          "id": "9f9e501b862ea12467e2-24cb5525fca71bb50e49",
+          "id": "9f9e501b862ea12467e2-0260038b7461fd880829",
           "file": "windows.test.ts",
-          "line": 3,
-          "column": 5
+          "line": 23,
+          "column": 6
         },
         {
-          "title": "Interact with multiple tabs",
+          "title": "Multiple window modal",
           "ok": false,
           "tags": [],
           "tests": [
@@ -236,25 +280,25 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-20T10:22:08.475Z",
+                  "startTime": "2024-09-24T10:12:25.865Z",
                   "attachments": []
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "9f9e501b862ea12467e2-a2cb8b7c76ca02f47fd5",
+          "id": "9f9e501b862ea12467e2-f3c2c2596149ed9fedb2",
           "file": "windows.test.ts",
-          "line": 3,
-          "column": 5
+          "line": 23,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-20T10:22:08.143Z",
-    "duration": 6430.072999999999,
+    "startTime": "2024-09-24T10:12:25.519Z",
+    "duration": 6423.121,
     "expected": 2,
     "skipped": 0,
     "unexpected": 1,
