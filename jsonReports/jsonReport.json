@@ -95,8 +95,8 @@
       "line": 0,
       "specs": [
         {
-          "title": "calendar select date range",
-          "ok": false,
+          "title": "calendar select date range 2 using Moment.js",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -108,62 +108,42 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 6339,
-                  "error": {
-                    "message": "Error: locator.click: Error: strict mode violation: locator('td.day').filter({ hasText: '5' }) resolved to 4 elements:\n    1) <td class=\"day\" data-date=\"1722816000000\">5</td> aka getByRole('cell', { name: '5' }).first()\n    2) <td class=\"day\" data-date=\"1723680000000\">15</td> aka getByRole('cell', { name: '15' })\n    3) <td data-date=\"1724544000000\" class=\"disabled disabled-date day\">25</td> aka getByRole('cell', { name: '25' })\n    4) <td class=\"new day\" data-date=\"1725494400000\">5</td> aka getByRole('cell', { name: '5' }).nth(3)\n\nCall log:\n  \u001b[2m- waiting for locator('td.day').filter({ hasText: '5' })\u001b[22m\n",
-                    "stack": "Error: locator.click: Error: strict mode violation: locator('td.day').filter({ hasText: '5' }) resolved to 4 elements:\n    1) <td class=\"day\" data-date=\"1722816000000\">5</td> aka getByRole('cell', { name: '5' }).first()\n    2) <td class=\"day\" data-date=\"1723680000000\">15</td> aka getByRole('cell', { name: '15' })\n    3) <td data-date=\"1724544000000\" class=\"disabled disabled-date day\">25</td> aka getByRole('cell', { name: '25' })\n    4) <td class=\"new day\" data-date=\"1725494400000\">5</td> aka getByRole('cell', { name: '5' }).nth(3)\n\nCall log:\n  \u001b[2m- waiting for locator('td.day').filter({ hasText: '5' })\u001b[22m\n\n    at /home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts:38:59",
-                    "location": {
-                      "file": "/home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts",
-                      "column": 59,
-                      "line": 38
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 36 |\u001b[39m     \n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m prev\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"td.day\"\u001b[39m)\u001b[33m.\u001b[39mfilter({ hasText\u001b[33m:\u001b[39m \u001b[32m'5'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m     \u001b[90m// await page.click(\"//td[@class='day'][text()='5']\");\u001b[39m\n \u001b[90m 41 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
+                  "status": "passed",
+                  "duration": 26085,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "location": {
-                        "file": "/home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts",
-                        "column": 59,
-                        "line": 38
-                      },
-                      "message": "Error: locator.click: Error: strict mode violation: locator('td.day').filter({ hasText: '5' }) resolved to 4 elements:\n    1) <td class=\"day\" data-date=\"1722816000000\">5</td> aka getByRole('cell', { name: '5' }).first()\n    2) <td class=\"day\" data-date=\"1723680000000\">15</td> aka getByRole('cell', { name: '15' })\n    3) <td data-date=\"1724544000000\" class=\"disabled disabled-date day\">25</td> aka getByRole('cell', { name: '25' })\n    4) <td class=\"new day\" data-date=\"1725494400000\">5</td> aka getByRole('cell', { name: '5' }).nth(3)\n\nCall log:\n  \u001b[2m- waiting for locator('td.day').filter({ hasText: '5' })\u001b[22m\n\n\n\u001b[0m \u001b[90m 36 |\u001b[39m     \n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m prev\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"td.day\"\u001b[39m)\u001b[33m.\u001b[39mfilter({ hasText\u001b[33m:\u001b[39m \u001b[32m'5'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m     \u001b[90m// await page.click(\"//td[@class='day'][text()='5']\");\u001b[39m\n \u001b[90m 41 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts:38:59\u001b[22m"
+                      "text": "this month:  \u001b[33mtrue\u001b[39m\n"
                     }
                   ],
-                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-26T09:20:07.043Z",
+                  "startTime": "2024-09-26T16:12:23.672Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/calendar-calendar-select-date-range-chromium/test-failed-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/calendar-calendar-select-date-range-2-using-Moment-js-chromium/test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/calendar-calendar-select-date-range-chromium/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/calendar-calendar-select-date-range-2-using-Moment-js-chromium/video.webm"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts",
-                    "column": 59,
-                    "line": 38
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "d38dc42fc23f1a3d75f7-d3ce8e93c8b7fec37a11",
+          "id": "d38dc42fc23f1a3d75f7-538063949a193ba5070e",
           "file": "calendar.test.ts",
-          "line": 17,
+          "line": 43,
           "column": 6
         },
         {
-          "title": "calendar select date range",
-          "ok": false,
+          "title": "calendar select date range 2 using Moment.js",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -175,61 +155,41 @@
               "results": [
                 {
                   "workerIndex": 1,
-                  "status": "failed",
-                  "duration": 8239,
-                  "error": {
-                    "message": "Error: locator.click: Error: strict mode violation: locator('td.day').filter({ hasText: '5' }) resolved to 4 elements:\n    1) <td class=\"day\" data-date=\"1722816000000\">5</td> aka getByRole('cell', { name: '5' }).first()\n    2) <td class=\"day\" data-date=\"1723680000000\">15</td> aka getByRole('cell', { name: '15' })\n    3) <td data-date=\"1724544000000\" class=\"disabled disabled-date day\">25</td> aka getByRole('cell', { name: '25' })\n    4) <td class=\"new day\" data-date=\"1725494400000\">5</td> aka getByRole('cell', { name: '5' }).nth(3)\n\nCall log:\n  \u001b[2m- waiting for locator('td.day').filter({ hasText: '5' })\u001b[22m\n",
-                    "stack": "Error: locator.click: Error: strict mode violation: locator('td.day').filter({ hasText: '5' }) resolved to 4 elements:\n    1) <td class=\"day\" data-date=\"1722816000000\">5</td> aka getByRole('cell', { name: '5' }).first()\n    2) <td class=\"day\" data-date=\"1723680000000\">15</td> aka getByRole('cell', { name: '15' })\n    3) <td data-date=\"1724544000000\" class=\"disabled disabled-date day\">25</td> aka getByRole('cell', { name: '25' })\n    4) <td class=\"new day\" data-date=\"1725494400000\">5</td> aka getByRole('cell', { name: '5' }).nth(3)\n\nCall log:\n  \u001b[2m- waiting for locator('td.day').filter({ hasText: '5' })\u001b[22m\n\n    at /home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts:38:59",
-                    "location": {
-                      "file": "/home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts",
-                      "column": 59,
-                      "line": 38
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 36 |\u001b[39m     \n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m prev\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"td.day\"\u001b[39m)\u001b[33m.\u001b[39mfilter({ hasText\u001b[33m:\u001b[39m \u001b[32m'5'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m     \u001b[90m// await page.click(\"//td[@class='day'][text()='5']\");\u001b[39m\n \u001b[90m 41 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
+                  "status": "passed",
+                  "duration": 25538,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "location": {
-                        "file": "/home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts",
-                        "column": 59,
-                        "line": 38
-                      },
-                      "message": "Error: locator.click: Error: strict mode violation: locator('td.day').filter({ hasText: '5' }) resolved to 4 elements:\n    1) <td class=\"day\" data-date=\"1722816000000\">5</td> aka getByRole('cell', { name: '5' }).first()\n    2) <td class=\"day\" data-date=\"1723680000000\">15</td> aka getByRole('cell', { name: '15' })\n    3) <td data-date=\"1724544000000\" class=\"disabled disabled-date day\">25</td> aka getByRole('cell', { name: '25' })\n    4) <td class=\"new day\" data-date=\"1725494400000\">5</td> aka getByRole('cell', { name: '5' }).nth(3)\n\nCall log:\n  \u001b[2m- waiting for locator('td.day').filter({ hasText: '5' })\u001b[22m\n\n\n\u001b[0m \u001b[90m 36 |\u001b[39m     \n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m prev\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"td.day\"\u001b[39m)\u001b[33m.\u001b[39mfilter({ hasText\u001b[33m:\u001b[39m \u001b[32m'5'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m     \u001b[90m// await page.click(\"//td[@class='day'][text()='5']\");\u001b[39m\n \u001b[90m 41 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts:38:59\u001b[22m"
+                      "text": "this month:  \u001b[33mtrue\u001b[39m\n"
                     }
                   ],
-                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-26T09:20:07.044Z",
+                  "startTime": "2024-09-26T16:12:23.674Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/calendar-calendar-select-date-range-firefox/test-failed-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/calendar-calendar-select-date-range-2-using-Moment-js-firefox/test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/calendar-calendar-select-date-range-firefox/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/calendar-calendar-select-date-range-2-using-Moment-js-firefox/video.webm"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts",
-                    "column": 59,
-                    "line": 38
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "d38dc42fc23f1a3d75f7-06fe0e781eafa7e509fa",
+          "id": "d38dc42fc23f1a3d75f7-9ba75a9c1e3647c4a077",
           "file": "calendar.test.ts",
-          "line": 17,
+          "line": 43,
           "column": 6
         },
         {
-          "title": "calendar select date range",
+          "title": "calendar select date range 2 using Moment.js",
           "ok": false,
           "tags": [],
           "tests": [
@@ -243,7 +203,7 @@
                 {
                   "workerIndex": 2,
                   "status": "failed",
-                  "duration": 4,
+                  "duration": 3,
                   "error": {
                     "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
                     "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
@@ -256,16 +216,16 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-26T09:20:07.042Z",
+                  "startTime": "2024-09-26T16:12:23.673Z",
                   "attachments": []
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "d38dc42fc23f1a3d75f7-3dc31bc9b17e2ce059b5",
+          "id": "d38dc42fc23f1a3d75f7-41796a5ab1014c649f7e",
           "file": "calendar.test.ts",
-          "line": 17,
+          "line": 43,
           "column": 6
         }
       ]
@@ -273,11 +233,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-26T09:20:06.703Z",
-    "duration": 9635.526,
-    "expected": 0,
+    "startTime": "2024-09-26T16:12:23.335Z",
+    "duration": 26983.746000000003,
+    "expected": 2,
     "skipped": 0,
-    "unexpected": 3,
+    "unexpected": 1,
     "flaky": 0
   }
 }
