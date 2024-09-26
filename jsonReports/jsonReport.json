@@ -48,7 +48,7 @@
         "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
         "testIgnore": [],
         "testMatch": [
-          "tests/windows.test.ts"
+          "tests/calendar.test.ts"
         ],
         "timeout": 30000
       },
@@ -62,7 +62,7 @@
         "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
         "testIgnore": [],
         "testMatch": [
-          "tests/windows.test.ts"
+          "tests/calendar.test.ts"
         ],
         "timeout": 30000
       },
@@ -76,7 +76,7 @@
         "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
         "testIgnore": [],
         "testMatch": [
-          "tests/windows.test.ts"
+          "tests/calendar.test.ts"
         ],
         "timeout": 30000
       }
@@ -89,14 +89,14 @@
   },
   "suites": [
     {
-      "title": "windows.test.ts",
-      "file": "windows.test.ts",
+      "title": "calendar.test.ts",
+      "file": "calendar.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Multiple window modal",
-          "ok": true,
+          "title": "calendar select date range",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -108,77 +108,62 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 4112,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
+                  "status": "failed",
+                  "duration": 6339,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('td.day').filter({ hasText: '5' }) resolved to 4 elements:\n    1) <td class=\"day\" data-date=\"1722816000000\">5</td> aka getByRole('cell', { name: '5' }).first()\n    2) <td class=\"day\" data-date=\"1723680000000\">15</td> aka getByRole('cell', { name: '15' })\n    3) <td data-date=\"1724544000000\" class=\"disabled disabled-date day\">25</td> aka getByRole('cell', { name: '25' })\n    4) <td class=\"new day\" data-date=\"1725494400000\">5</td> aka getByRole('cell', { name: '5' }).nth(3)\n\nCall log:\n  \u001b[2m- waiting for locator('td.day').filter({ hasText: '5' })\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('td.day').filter({ hasText: '5' }) resolved to 4 elements:\n    1) <td class=\"day\" data-date=\"1722816000000\">5</td> aka getByRole('cell', { name: '5' }).first()\n    2) <td class=\"day\" data-date=\"1723680000000\">15</td> aka getByRole('cell', { name: '15' })\n    3) <td data-date=\"1724544000000\" class=\"disabled disabled-date day\">25</td> aka getByRole('cell', { name: '25' })\n    4) <td class=\"new day\" data-date=\"1725494400000\">5</td> aka getByRole('cell', { name: '5' }).nth(3)\n\nCall log:\n  \u001b[2m- waiting for locator('td.day').filter({ hasText: '5' })\u001b[22m\n\n    at /home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts:38:59",
+                    "location": {
+                      "file": "/home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts",
+                      "column": 59,
+                      "line": 38
                     },
+                    "snippet": "\u001b[0m \u001b[90m 36 |\u001b[39m     \n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m prev\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"td.day\"\u001b[39m)\u001b[33m.\u001b[39mfilter({ hasText\u001b[33m:\u001b[39m \u001b[32m'5'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m     \u001b[90m// await page.click(\"//td[@class='day'][text()='5']\");\u001b[39m\n \u001b[90m 41 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
                     {
-                      "text": "No. of tabs: \u001b[33m3\u001b[39m\n"
-                    },
-                    {
-                      "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
-                    },
-                    {
-                      "text": "https://www.facebook.com/lambdatest/\n"
-                    },
-                    {
-                      "text": "https://twitter.com/x/migrate?tok=7b2265223a222f696e74656e742f666f6c6c6f773f73637265656e5f6e616d653d4c616d62646174657374696e67222c2274223a313732373137333535367d4c8e7caae2e42e13864eb98cedb106f7\n"
-                    },
-                    {
-                      "text": "LambdaTest \n"
+                      "location": {
+                        "file": "/home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts",
+                        "column": 59,
+                        "line": 38
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('td.day').filter({ hasText: '5' }) resolved to 4 elements:\n    1) <td class=\"day\" data-date=\"1722816000000\">5</td> aka getByRole('cell', { name: '5' }).first()\n    2) <td class=\"day\" data-date=\"1723680000000\">15</td> aka getByRole('cell', { name: '15' })\n    3) <td data-date=\"1724544000000\" class=\"disabled disabled-date day\">25</td> aka getByRole('cell', { name: '25' })\n    4) <td class=\"new day\" data-date=\"1725494400000\">5</td> aka getByRole('cell', { name: '5' }).nth(3)\n\nCall log:\n  \u001b[2m- waiting for locator('td.day').filter({ hasText: '5' })\u001b[22m\n\n\n\u001b[0m \u001b[90m 36 |\u001b[39m     \n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m prev\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"td.day\"\u001b[39m)\u001b[33m.\u001b[39mfilter({ hasText\u001b[33m:\u001b[39m \u001b[32m'5'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m     \u001b[90m// await page.click(\"//td[@class='day'][text()='5']\");\u001b[39m\n \u001b[90m 41 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts:38:59\u001b[22m"
                     }
                   ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-24T10:25:52.755Z",
+                  "startTime": "2024-09-26T09:20:07.043Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-chromium/test-finished-2.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-chromium/test-finished-1.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-chromium/test-finished-3.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/calendar-calendar-select-date-range-chromium/test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-chromium/video-2.webm"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-chromium/video-1.webm"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-chromium/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/calendar-calendar-select-date-range-chromium/video.webm"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "/home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts",
+                    "column": 59,
+                    "line": 38
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "9f9e501b862ea12467e2-e553d2ccb3f4c8d3895e",
-          "file": "windows.test.ts",
-          "line": 23,
+          "id": "d38dc42fc23f1a3d75f7-d3ce8e93c8b7fec37a11",
+          "file": "calendar.test.ts",
+          "line": 17,
           "column": 6
         },
         {
-          "title": "Multiple window modal",
-          "ok": true,
+          "title": "calendar select date range",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -190,76 +175,61 @@
               "results": [
                 {
                   "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 4627,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
+                  "status": "failed",
+                  "duration": 8239,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('td.day').filter({ hasText: '5' }) resolved to 4 elements:\n    1) <td class=\"day\" data-date=\"1722816000000\">5</td> aka getByRole('cell', { name: '5' }).first()\n    2) <td class=\"day\" data-date=\"1723680000000\">15</td> aka getByRole('cell', { name: '15' })\n    3) <td data-date=\"1724544000000\" class=\"disabled disabled-date day\">25</td> aka getByRole('cell', { name: '25' })\n    4) <td class=\"new day\" data-date=\"1725494400000\">5</td> aka getByRole('cell', { name: '5' }).nth(3)\n\nCall log:\n  \u001b[2m- waiting for locator('td.day').filter({ hasText: '5' })\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('td.day').filter({ hasText: '5' }) resolved to 4 elements:\n    1) <td class=\"day\" data-date=\"1722816000000\">5</td> aka getByRole('cell', { name: '5' }).first()\n    2) <td class=\"day\" data-date=\"1723680000000\">15</td> aka getByRole('cell', { name: '15' })\n    3) <td data-date=\"1724544000000\" class=\"disabled disabled-date day\">25</td> aka getByRole('cell', { name: '25' })\n    4) <td class=\"new day\" data-date=\"1725494400000\">5</td> aka getByRole('cell', { name: '5' }).nth(3)\n\nCall log:\n  \u001b[2m- waiting for locator('td.day').filter({ hasText: '5' })\u001b[22m\n\n    at /home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts:38:59",
+                    "location": {
+                      "file": "/home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts",
+                      "column": 59,
+                      "line": 38
                     },
+                    "snippet": "\u001b[0m \u001b[90m 36 |\u001b[39m     \n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m prev\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"td.day\"\u001b[39m)\u001b[33m.\u001b[39mfilter({ hasText\u001b[33m:\u001b[39m \u001b[32m'5'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m     \u001b[90m// await page.click(\"//td[@class='day'][text()='5']\");\u001b[39m\n \u001b[90m 41 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
                     {
-                      "text": "No. of tabs: \u001b[33m3\u001b[39m\n"
-                    },
-                    {
-                      "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
-                    },
-                    {
-                      "text": "https://www.facebook.com/lambdatest/\n"
-                    },
-                    {
-                      "text": "https://twitter.com/x/migrate?tok=7b2265223a222f696e74656e742f666f6c6c6f773f73637265656e5f6e616d653d4c616d62646174657374696e67222c2274223a313732373137333535377da15170af241183da4e5334642600a507\n"
-                    },
-                    {
-                      "text": "LambdaTest \n"
+                      "location": {
+                        "file": "/home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts",
+                        "column": 59,
+                        "line": 38
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('td.day').filter({ hasText: '5' }) resolved to 4 elements:\n    1) <td class=\"day\" data-date=\"1722816000000\">5</td> aka getByRole('cell', { name: '5' }).first()\n    2) <td class=\"day\" data-date=\"1723680000000\">15</td> aka getByRole('cell', { name: '15' })\n    3) <td data-date=\"1724544000000\" class=\"disabled disabled-date day\">25</td> aka getByRole('cell', { name: '25' })\n    4) <td class=\"new day\" data-date=\"1725494400000\">5</td> aka getByRole('cell', { name: '5' }).nth(3)\n\nCall log:\n  \u001b[2m- waiting for locator('td.day').filter({ hasText: '5' })\u001b[22m\n\n\n\u001b[0m \u001b[90m 36 |\u001b[39m     \n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m prev\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"td.day\"\u001b[39m)\u001b[33m.\u001b[39mfilter({ hasText\u001b[33m:\u001b[39m \u001b[32m'5'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m     \u001b[90m// await page.click(\"//td[@class='day'][text()='5']\");\u001b[39m\n \u001b[90m 41 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts:38:59\u001b[22m"
                     }
                   ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-24T10:25:52.755Z",
+                  "startTime": "2024-09-26T09:20:07.044Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/test-finished-3.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/test-finished-2.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/calendar-calendar-select-date-range-firefox/test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/video-2.webm"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/video-1.webm"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/windows-Multiple-window-modal-firefox/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/calendar-calendar-select-date-range-firefox/video.webm"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "/home/naopeke/Bootcamp/playwight-demo/tests/calendar.test.ts",
+                    "column": 59,
+                    "line": 38
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "9f9e501b862ea12467e2-0260038b7461fd880829",
-          "file": "windows.test.ts",
-          "line": 23,
+          "id": "d38dc42fc23f1a3d75f7-06fe0e781eafa7e509fa",
+          "file": "calendar.test.ts",
+          "line": 17,
           "column": 6
         },
         {
-          "title": "Multiple window modal",
+          "title": "calendar select date range",
           "ok": false,
           "tags": [],
           "tests": [
@@ -286,16 +256,16 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-24T10:25:52.762Z",
+                  "startTime": "2024-09-26T09:20:07.042Z",
                   "attachments": []
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "9f9e501b862ea12467e2-f3c2c2596149ed9fedb2",
-          "file": "windows.test.ts",
-          "line": 23,
+          "id": "d38dc42fc23f1a3d75f7-3dc31bc9b17e2ce059b5",
+          "file": "calendar.test.ts",
+          "line": 17,
           "column": 6
         }
       ]
@@ -303,11 +273,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-24T10:25:52.426Z",
-    "duration": 6017.4980000000005,
-    "expected": 2,
+    "startTime": "2024-09-26T09:20:06.703Z",
+    "duration": 9635.526,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 3,
     "flaky": 0
   }
 }
