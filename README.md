@@ -39,3 +39,7 @@ https://www.lambdatest.com/selenium-playground/bootstrap-date-picker-demo
 ## Moment.js  
 https://momentjs.com/  
   
+## Download File  
+https://www.lambdatest.com/selenium-playground/generate-file-to-download-demo    
+  
+## 

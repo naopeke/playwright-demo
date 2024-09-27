@@ -48,7 +48,7 @@
         "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
         "testIgnore": [],
         "testMatch": [
-          "tests/calendar.test.ts"
+          "tests/uploadDownload.test.ts"
         ],
         "timeout": 30000
       },
@@ -62,7 +62,7 @@
         "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
         "testIgnore": [],
         "testMatch": [
-          "tests/calendar.test.ts"
+          "tests/uploadDownload.test.ts"
         ],
         "timeout": 30000
       },
@@ -76,7 +76,7 @@
         "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
         "testIgnore": [],
         "testMatch": [
-          "tests/calendar.test.ts"
+          "tests/uploadDownload.test.ts"
         ],
         "timeout": 30000
       }
@@ -89,13 +89,13 @@
   },
   "suites": [
     {
-      "title": "calendar.test.ts",
-      "file": "calendar.test.ts",
+      "title": "uploadDownload.test.ts",
+      "file": "uploadDownload.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "calendar select date range 3 using Moment.js",
+          "title": "Download files",
           "ok": true,
           "tags": [],
           "tests": [
@@ -109,32 +109,26 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 4661,
+                  "duration": 2755,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "this month:  \u001b[33mtrue\u001b[39m\n"
-                    },
-                    {
-                      "text": "this month:  \u001b[33mfalse\u001b[39m\n"
-                    },
-                    {
-                      "text": "this month:  \u001b[33mfalse\u001b[39m\n"
+                      "text": "/tmp/playwright-artifacts-XXXXXXOkP6TZ/64debbfb-a8c6-46eb-b644-8600014164c3\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-27T08:03:38.491Z",
+                  "startTime": "2024-09-27T08:51:30.867Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/calendar-calendar-select-date-range-3-using-Moment-js-chromium/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/uploadDownload-Download-files-chromium/test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/calendar-calendar-select-date-range-3-using-Moment-js-chromium/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/uploadDownload-Download-files-chromium/video.webm"
                     }
                   ]
                 }
@@ -142,13 +136,13 @@
               "status": "expected"
             }
           ],
-          "id": "d38dc42fc23f1a3d75f7-b8de8b7fe4afa8db9dc7",
-          "file": "calendar.test.ts",
-          "line": 87,
-          "column": 6
+          "id": "e0eab9e3ad31d1750f71-c00af26bb92a5462abd8",
+          "file": "uploadDownload.test.ts",
+          "line": 3,
+          "column": 5
         },
         {
-          "title": "calendar select date range 3 using Moment.js",
+          "title": "Download files",
           "ok": true,
           "tags": [],
           "tests": [
@@ -162,32 +156,26 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 5632,
+                  "duration": 2968,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "this month:  \u001b[33mtrue\u001b[39m\n"
-                    },
-                    {
-                      "text": "this month:  \u001b[33mfalse\u001b[39m\n"
-                    },
-                    {
-                      "text": "this month:  \u001b[33mfalse\u001b[39m\n"
+                      "text": "/tmp/playwright-artifacts-XXXXXXuIJR6P/1177d45b-856d-4a42-a551-921486b28ea3\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-27T08:03:38.501Z",
+                  "startTime": "2024-09-27T08:51:30.883Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/calendar-calendar-select-date-range-3-using-Moment-js-firefox/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/uploadDownload-Download-files-firefox/test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/calendar-calendar-select-date-range-3-using-Moment-js-firefox/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/uploadDownload-Download-files-firefox/video.webm"
                     }
                   ]
                 }
@@ -195,13 +183,13 @@
               "status": "expected"
             }
           ],
-          "id": "d38dc42fc23f1a3d75f7-985d9f4e5cde568a327b",
-          "file": "calendar.test.ts",
-          "line": 87,
-          "column": 6
+          "id": "e0eab9e3ad31d1750f71-53fdde96335e904c71cf",
+          "file": "uploadDownload.test.ts",
+          "line": 3,
+          "column": 5
         },
         {
-          "title": "calendar select date range 3 using Moment.js",
+          "title": "Download files",
           "ok": false,
           "tags": [],
           "tests": [
@@ -215,7 +203,7 @@
                 {
                   "workerIndex": 2,
                   "status": "failed",
-                  "duration": 4,
+                  "duration": 5,
                   "error": {
                     "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
                     "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
@@ -228,25 +216,25 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-27T08:03:38.490Z",
+                  "startTime": "2024-09-27T08:51:30.885Z",
                   "attachments": []
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "d38dc42fc23f1a3d75f7-92805254ad5ff7dc6312",
-          "file": "calendar.test.ts",
-          "line": 87,
-          "column": 6
+          "id": "e0eab9e3ad31d1750f71-52bef2dbf49a33344237",
+          "file": "uploadDownload.test.ts",
+          "line": 3,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-27T08:03:38.139Z",
-    "duration": 7041.5419999999995,
+    "startTime": "2024-09-27T08:51:30.536Z",
+    "duration": 4367.909,
     "expected": 2,
     "skipped": 0,
     "unexpected": 1,
