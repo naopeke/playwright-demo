@@ -1,7 +1,7 @@
 {
   "config": {
     "configFile": "/home/naopeke/Bootcamp/playwight-demo/playwright.config.ts",
-    "rootDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
+    "rootDir": "/home/naopeke/Bootcamp/playwight-demo/pomTest",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -10,7 +10,9 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 3
+    },
     "preserveOutput": "always",
     "reporter": [
       [
@@ -43,7 +45,7 @@
         "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
+        "testDir": "/home/naopeke/Bootcamp/playwight-demo/pomTest",
         "testIgnore": [],
         "testMatch": [
           "pomTest/addToCart.test.ts"
@@ -57,7 +59,7 @@
         "metadata": {},
         "id": "firefox",
         "name": "firefox",
-        "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
+        "testDir": "/home/naopeke/Bootcamp/playwight-demo/pomTest",
         "testIgnore": [],
         "testMatch": [
           "pomTest/addToCart.test.ts"
@@ -71,7 +73,7 @@
         "metadata": {},
         "id": "webkit",
         "name": "webkit",
-        "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
+        "testDir": "/home/naopeke/Bootcamp/playwight-demo/pomTest",
         "testIgnore": [],
         "testMatch": [
           "pomTest/addToCart.test.ts"
@@ -85,19 +87,149 @@
     "workers": 8,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "Error: No tests found",
-      "stack": "Error: No tests found"
+      "title": "addToCart.test.ts",
+      "file": "addToCart.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Register test_01",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 12195,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-27T16:52:46.531Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Register-test-01-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Register-test-01-chromium/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7fd058b15c0ca70151c1-7911b3f529bd15561a2c",
+          "file": "addToCart.test.ts",
+          "line": 10,
+          "column": 5
+        },
+        {
+          "title": "Register test_01",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 12608,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-27T16:52:46.524Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Register-test-01-firefox/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Register-test-01-firefox/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7fd058b15c0ca70151c1-89ee2606b62c6e76fc30",
+          "file": "addToCart.test.ts",
+          "line": 10,
+          "column": 5
+        },
+        {
+          "title": "Register test_01",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "failed",
+                  "duration": 4,
+                  "error": {
+                    "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-27T16:52:46.525Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "7fd058b15c0ca70151c1-7abc9e57057608506b19",
+          "file": "addToCart.test.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2024-09-27T11:07:53.395Z",
-    "duration": 7.117000000000019,
-    "expected": 0,
+    "startTime": "2024-09-27T16:52:46.132Z",
+    "duration": 14001.872000000001,
+    "expected": 2,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

@@ -1,4 +1,4 @@
-import { Page } from "@playwright/test";
+import { expect, Page } from "@playwright/test";
 
 export default class RegisterPage {
 
@@ -7,28 +7,28 @@ export default class RegisterPage {
     }
     
     async enterFirstName(firstname: string){
-        this.page.locator("#input-firstname").fill(firstname);
+        await this.page.locator("#input-firstname").fill(firstname);
     }
 
     async enterLastName(lastname: string){
-        this.page.locator("#input-lastname").fill(lastname);
+        await this.page.locator("#input-lastname").fill(lastname);
     }
 
     async enterEmail(email: string){
-        this.page.locator("#input-email").fill(email);
+        await this.page.locator("#input-email").fill(email);
     }
 
     async enterTelephone(phone: string){
-        this.page.locator("#input-telephone").fill(phone);
+        await this.page.locator("#input-telephone").fill(phone);
     }
 
     
     async enterPassword(password: string){
-        this.page.locator("#input-password").fill(password);
+        await this.page.locator("#input-password").fill(password);
     }
 
     async enterConfirmPassword(confirm: string){
-        this.page.locator("#input-confirm").fill(confirm);
+        await this.page.locator("#input-confirm").fill(confirm);
     }
 
     async isSubscribeChecked(){
@@ -40,8 +40,16 @@ export default class RegisterPage {
     }
 
     async clickContinueToRegister(){
-        const navigationPromise = this.page.waitForURL("https://ecommerce-playground.lambdatest.io/index.php?route=account/success");
+        // If the email is not registered yet
+        // const navigationPromise = this.page.waitForURL("https://ecommerce-playground.lambdatest.io/index.php?route=account/success"); //
+        //await this.page.click("//input[@value='Continue']");
+        //await navigationPromise;
+        
+        // If the email is already registered
+        const navigationPromise = this.page.waitForURL("https://ecommerce-playground.lambdatest.io/index.php?route=account/register"); // Warning: E-Mail Address is already registered!
         await this.page.click("//input[@value='Continue']");
         await navigationPromise;
+        const warning = this.page.getByText("Warning: E-Mail Address is already registered!")
+        await expect(warning).toBeVisible();
     }
 }

@@ -17,8 +17,7 @@ test("Register test_01", async ({ page, baseURL })=>{
     await register.enterTelephone("1234567890");
     await register.enterPassword(password);
     await register.enterConfirmPassword(password);
-    expect (register.isSubscribeChecked()).toBe(true);
-
+    expect (await register.isSubscribeChecked()).toBe(true);
     await register.clickTermAndCondition();
     await register.clickContinueToRegister();
 })
