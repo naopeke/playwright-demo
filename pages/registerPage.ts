@@ -46,9 +46,7 @@ export default class RegisterPage {
         //await navigationPromise;
         
         // If the email is already registered
-        const navigationPromise = this.page.waitForURL("https://ecommerce-playground.lambdatest.io/index.php?route=account/register"); // Warning: E-Mail Address is already registered!
         await this.page.click("//input[@value='Continue']");
-        await navigationPromise;
         const warning = this.page.getByText("Warning: E-Mail Address is already registered!")
         await expect(warning).toBeVisible();
     }
