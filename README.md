@@ -42,4 +42,7 @@ https://momentjs.com/
 ## Download File  
 https://www.lambdatest.com/selenium-playground/generate-file-to-download-demo    
   
+## jQuery File Upload Demo  
+https://blueimp.github.io/jQuery-File-Upload/  
+  
 ## 

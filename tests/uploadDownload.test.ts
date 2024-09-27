@@ -51,3 +51,9 @@ test("Download files", async ({ page }) => {
     const fileName = download[0].suggestedFilename();
     await download[0].saveAs(fileName);
 })
+
+
+test.only("Upload files", async ({ page }) => {
+    await page.goto("https://blueimp.github.io/jQuery-File-Upload/");
+    await page.setInputFiles("//input[@type='file']",["uploadItems/pikachu.jpg", "uploadItems/kodakku.jpeg"]);
+})
