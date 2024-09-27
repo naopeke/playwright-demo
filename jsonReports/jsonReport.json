@@ -95,7 +95,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "Upload files",
+          "title": "Selected Upload",
           "ok": true,
           "tags": [],
           "tests": [
@@ -109,22 +109,26 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 3008,
+                  "duration": 2833,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[33mtrue\u001b[39m\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-27T09:19:20.677Z",
+                  "startTime": "2024-09-27T09:26:11.569Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/uploadDownload-Upload-files-chromium/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/uploadDownload-Selected-Upload-chromium/test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/uploadDownload-Upload-files-chromium/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/uploadDownload-Selected-Upload-chromium/video.webm"
                     }
                   ]
                 }
@@ -132,13 +136,13 @@
               "status": "expected"
             }
           ],
-          "id": "e0eab9e3ad31d1750f71-25b23b7ec68d808835ed",
+          "id": "e0eab9e3ad31d1750f71-de936a7bb493cb7fe0d5",
           "file": "uploadDownload.test.ts",
-          "line": 56,
+          "line": 62,
           "column": 6
         },
         {
-          "title": "Upload files",
+          "title": "Selected Upload",
           "ok": true,
           "tags": [],
           "tests": [
@@ -152,22 +156,26 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 3177,
+                  "duration": 4104,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[33mtrue\u001b[39m\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-27T09:19:20.676Z",
+                  "startTime": "2024-09-27T09:26:11.559Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/uploadDownload-Upload-files-firefox/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/uploadDownload-Selected-Upload-firefox/test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/uploadDownload-Upload-files-firefox/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/uploadDownload-Selected-Upload-firefox/video.webm"
                     }
                   ]
                 }
@@ -175,13 +183,13 @@
               "status": "expected"
             }
           ],
-          "id": "e0eab9e3ad31d1750f71-1f99343ab573dc132679",
+          "id": "e0eab9e3ad31d1750f71-64cf30542d8f561e7e47",
           "file": "uploadDownload.test.ts",
-          "line": 56,
+          "line": 62,
           "column": 6
         },
         {
-          "title": "Upload files",
+          "title": "Selected Upload",
           "ok": false,
           "tags": [],
           "tests": [
@@ -195,7 +203,7 @@
                 {
                   "workerIndex": 2,
                   "status": "failed",
-                  "duration": 5,
+                  "duration": 4,
                   "error": {
                     "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
                     "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
@@ -208,16 +216,16 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-27T09:19:20.677Z",
+                  "startTime": "2024-09-27T09:26:11.562Z",
                   "attachments": []
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "e0eab9e3ad31d1750f71-5e2ec55b36872c4ac323",
+          "id": "e0eab9e3ad31d1750f71-f6889428b79bd031be87",
           "file": "uploadDownload.test.ts",
-          "line": 56,
+          "line": 62,
           "column": 6
         }
       ]
@@ -225,8 +233,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-27T09:19:20.292Z",
-    "duration": 4707.306,
+    "startTime": "2024-09-27T09:26:11.184Z",
+    "duration": 7193.504,
     "expected": 2,
     "skipped": 0,
     "unexpected": 1,
