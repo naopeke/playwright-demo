@@ -59,16 +59,23 @@ test.only("calendar select date range 2 using Moment.js", async ({ page }) => {
     
     let dateToSelect: string = "March 2023";
 
-    const thisMonth = moment(dateToSelect, "MMMM YYYY").isBefore();//is before the present month
+    //https://momentjscom.readthedocs.io/en/latest/moment/01-parsing/17-defaults/#moment15-hh
+    // Moment.jsを使って、dateToSelectを"MMMM YYYY"形式で解析
+    //https://momentjscom.readthedocs.io/en/latest/moment/05-query/01-is-before/
+    const thisMonth = moment(dateToSelect, "MMMM YYYY").isBefore();//is before the current month
     console.log("this month: ", thisMonth);
 
+    //現在表示されている月が指定した月と異なる場合、ループが実行されます。
     while(await mmYY.textContent() != dateToSelect){
+        //thisMonthがtrueの場合、await prev.click()で前の月のボタンをクリックします。
         if (thisMonth){
             await prev.click();
+        // thisMonthがfalseの場合、await next.click()で次の月のボタンをクリックします。
         } else {
             await next.click();
         }
 
+        //月が正しく表示された後、await page.click("//td[@class='day'][text()='5']");で、特定の日付（ここでは「5日」）を選択します。
         await page.click("//td[@class='day'][text()='5']"); //XPathのほうが確実
     }
 
