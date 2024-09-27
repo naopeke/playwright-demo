@@ -109,16 +109,12 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 2755,
+                  "duration": 2319,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "/tmp/playwright-artifacts-XXXXXXOkP6TZ/64debbfb-a8c6-46eb-b644-8600014164c3\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-27T08:51:30.867Z",
+                  "startTime": "2024-09-27T08:57:44.016Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -156,16 +152,12 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 2968,
+                  "duration": 3292,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "/tmp/playwright-artifacts-XXXXXXuIJR6P/1177d45b-856d-4a42-a551-921486b28ea3\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-27T08:51:30.883Z",
+                  "startTime": "2024-09-27T08:57:44.005Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -216,7 +208,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-27T08:51:30.885Z",
+                  "startTime": "2024-09-27T08:57:44.010Z",
                   "attachments": []
                 }
               ],
@@ -233,8 +225,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-27T08:51:30.536Z",
-    "duration": 4367.909,
+    "startTime": "2024-09-27T08:57:43.649Z",
+    "duration": 4771.333,
     "expected": 2,
     "skipped": 0,
     "unexpected": 1,

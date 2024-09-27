@@ -15,20 +15,24 @@ test("Download files", async ({ page }) => {
 
     // キーを一つずつ押す
     await textbox.pressSequentially("Dale un like y subscribete");
+
     // ボタンが有効になるのを待つ
     await page.waitForSelector("#create:not([disabled])");
+    
     // ボタンをクリック
     await page.click("#create");
 
-    const [download] = await Promise.all([
-        page.waitForEvent("download"),
-        page.click("#link-to-download")
-    ])
+    //方法１
+    // const [download] = await Promise.all([
+    //     page.waitForEvent("download"),
+    //     page.click("#link-to-download")
+    // ])
 
-    const path = await download.path();
-    console.log(path);
+    // const path = await download.path();
+    // console.log(path);
 
 
+    //方法２
     // const download = await Promise.all([
     //     page.waitForEvent("download"),
     //     page.click("#link-to-download")
@@ -36,5 +40,14 @@ test("Download files", async ({ page }) => {
 
     // const path = await download[0].path();
     // console.log(path);
-    
+
+
+    //　方法３suggestedFilename()を利用
+    const download = await Promise.all([
+        page.waitForEvent("download"),
+        page.click("#link-to-download")
+    ])
+
+    const fileName = download[0].suggestedFilename();
+    await download[0].saveAs(fileName);
 })
