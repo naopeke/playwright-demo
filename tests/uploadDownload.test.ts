@@ -59,7 +59,7 @@ test("Upload files", async ({ page }) => {
 })
 
 
-test.only("Selected Upload", async ({ page }) => {
+test("Selected Upload", async ({ page }) => {
     await page.goto("https://blueimp.github.io/jQuery-File-Upload/");
 
     //Promise.allを使用して、2つの非同期操作を並行して実行します。
@@ -78,3 +78,7 @@ test.only("Selected Upload", async ({ page }) => {
     uploadFiles.setFiles(["uploadItems/pikachu.jpg", "uploadItems/kodakku.jpeg"]);
     
 })
+
+
+//https://playwright.dev/docs/downloads
+//他の方法もある
