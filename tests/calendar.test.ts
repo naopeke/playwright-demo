@@ -1,3 +1,4 @@
+import { select } from '@ngrx/core';
 import { test, expect } from '@playwright/test';
 import moment from 'moment';
 
@@ -40,7 +41,7 @@ test("calendar select date range", async ({ page }) => {
     await page.waitForTimeout(3000);
 })
 
-test.only("calendar select date range 2 using Moment.js", async ({ page }) => {
+test("calendar select date range 2 using Moment.js", async ({ page }) => {
     await page.goto("https://www.lambdatest.com/selenium-playground/bootstrap-date-picker-demo");
 
     const cookieConsentButton = page.locator("#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll");
@@ -80,4 +81,43 @@ test.only("calendar select date range 2 using Moment.js", async ({ page }) => {
     }
 
     await page.waitForTimeout(3000);
+})
+
+
+test.only("calendar select date range 3 using Moment.js", async ({ page }) => {
+    await page.goto("https://www.lambdatest.com/selenium-playground/bootstrap-date-picker-demo");
+
+    const cookieConsentButton = page.locator("#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll");
+    if (await cookieConsentButton.isVisible()){
+        await cookieConsentButton.click();
+    }
+
+    await selectDate(12, "August 2024");
+    await page.reload();
+    await selectDate(13, "November 2024");
+    await page.reload();
+    await selectDate(4, "December 2024")
+    await page.waitForTimeout(3000);    
+
+
+    async function selectDate(date: number, dateToSelect:string){
+        await page.getByPlaceholder("Start date").click();
+
+        const mmYY = page.locator('table.table-condensed th.datepicker-switch').nth(0);
+        const prev = page.locator('table.table-condensed th.prev').nth(0);
+        const next = page.locator('table.table-condensed th.next').nth(0);
+        
+        const thisMonth = moment(dateToSelect, "MMMM YYYY").isBefore();
+        console.log("this month: ", thisMonth);
+    
+        while(await mmYY.textContent() != dateToSelect){
+            if (thisMonth){
+                await prev.click();
+            } else {
+                await next.click();
+            }
+        }
+        await page.click(`//td[@class='day'][text()='${date}']`); //XPathのほうが確実
+    }
+
 })
