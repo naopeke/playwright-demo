@@ -1,8 +1,8 @@
 import { expect, test } from "../base/pomFixture";
-import RegisterPage from "../pages/registerPage";
-import LoginPage from "../pages/loginPage";
-import HomePage from "../pages/homePage";
-import SpecialHotPage from "../pages/specialHotPage";
+// import RegisterPage from "../pages/registerPage";
+// import LoginPage from "../pages/loginPage";
+// import HomePage from "../pages/homePage";
+// import SpecialHotPage from "../pages/specialHotPage";
 
 const email = "cayoso4147@skrak.com";
 const password = "123456";
