@@ -17,7 +17,17 @@ test("Register test_01", async ({ page, baseURL })=>{
     await register.enterTelephone("1234567890");
     await register.enterPassword(password);
     await register.enterConfirmPassword(password);
-    expect (await register.isSubscribeChecked()).toBe(true);
+    expect (await register.isSubscribeChecked()).toBe(true); //toBeChecked() is depricated
     await register.clickTermAndCondition();
     await register.clickContinueToRegister();
+})
+
+
+test.only("Login test_02", async ({ page, baseURL })=>{
+    const login = new LoginPage(page);
+    await page.goto(`${baseURL}route=account/login`);
+    await login.enterEmail(email);
+    await login.enterPassword(password);
+    await login.clickLoginBtn();
+    expect(await page.title()).toBe("My Account");
 })

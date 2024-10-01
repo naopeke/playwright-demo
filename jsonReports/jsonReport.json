@@ -95,7 +95,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "Register test_01",
+          "title": "Login test_02",
           "ok": true,
           "tags": [],
           "tests": [
@@ -109,22 +109,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 11854,
+                  "duration": 6339,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-27T16:54:47.287Z",
+                  "startTime": "2024-10-01T12:40:22.749Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Register-test-01-chromium/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Login-test-02-chromium/test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Register-test-01-chromium/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Login-test-02-chromium/video.webm"
                     }
                   ]
                 }
@@ -132,13 +132,13 @@
               "status": "expected"
             }
           ],
-          "id": "7fd058b15c0ca70151c1-7911b3f529bd15561a2c",
+          "id": "7fd058b15c0ca70151c1-4d94a31d4cbc223ef6f5",
           "file": "addToCart.test.ts",
-          "line": 10,
-          "column": 5
+          "line": 26,
+          "column": 6
         },
         {
-          "title": "Register test_01",
+          "title": "Login test_02",
           "ok": true,
           "tags": [],
           "tests": [
@@ -152,22 +152,22 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 12054,
+                  "duration": 7453,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-27T16:54:47.286Z",
+                  "startTime": "2024-10-01T12:40:22.757Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Register-test-01-firefox/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Login-test-02-firefox/test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Register-test-01-firefox/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Login-test-02-firefox/video.webm"
                     }
                   ]
                 }
@@ -175,13 +175,13 @@
               "status": "expected"
             }
           ],
-          "id": "7fd058b15c0ca70151c1-89ee2606b62c6e76fc30",
+          "id": "7fd058b15c0ca70151c1-face35d47d7c1673e7b9",
           "file": "addToCart.test.ts",
-          "line": 10,
-          "column": 5
+          "line": 26,
+          "column": 6
         },
         {
-          "title": "Register test_01",
+          "title": "Login test_02",
           "ok": false,
           "tags": [],
           "tests": [
@@ -208,25 +208,25 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-27T16:54:47.285Z",
+                  "startTime": "2024-10-01T12:40:22.747Z",
                   "attachments": []
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "7fd058b15c0ca70151c1-7abc9e57057608506b19",
+          "id": "7fd058b15c0ca70151c1-e02417fdc71d9d03a618",
           "file": "addToCart.test.ts",
-          "line": 10,
-          "column": 5
+          "line": 26,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-27T16:54:46.886Z",
-    "duration": 13468.743,
+    "startTime": "2024-10-01T12:40:22.353Z",
+    "duration": 8878.16,
     "expected": 2,
     "skipped": 0,
     "unexpected": 1,
