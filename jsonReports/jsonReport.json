@@ -1,7 +1,7 @@
 {
   "config": {
     "configFile": "/home/naopeke/Bootcamp/playwight-demo/playwright.config.ts",
-    "rootDir": "/home/naopeke/Bootcamp/playwight-demo/pomTest",
+    "rootDir": "/home/naopeke/Bootcamp/playwight-demo/fixture",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -45,10 +45,10 @@
         "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "/home/naopeke/Bootcamp/playwight-demo/pomTest",
+        "testDir": "/home/naopeke/Bootcamp/playwight-demo/fixture",
         "testIgnore": [],
         "testMatch": [
-          "pomTest/addToCart.test.ts"
+          "fixture/fixture.test.ts"
         ],
         "timeout": 30000
       },
@@ -59,10 +59,10 @@
         "metadata": {},
         "id": "firefox",
         "name": "firefox",
-        "testDir": "/home/naopeke/Bootcamp/playwight-demo/pomTest",
+        "testDir": "/home/naopeke/Bootcamp/playwight-demo/fixture",
         "testIgnore": [],
         "testMatch": [
-          "pomTest/addToCart.test.ts"
+          "fixture/fixture.test.ts"
         ],
         "timeout": 30000
       },
@@ -73,10 +73,10 @@
         "metadata": {},
         "id": "webkit",
         "name": "webkit",
-        "testDir": "/home/naopeke/Bootcamp/playwight-demo/pomTest",
+        "testDir": "/home/naopeke/Bootcamp/playwight-demo/fixture",
         "testIgnore": [],
         "testMatch": [
-          "pomTest/addToCart.test.ts"
+          "fixture/fixture.test.ts"
         ],
         "timeout": 30000
       }
@@ -89,13 +89,13 @@
   },
   "suites": [
     {
-      "title": "addToCart.test.ts",
-      "file": "addToCart.test.ts",
+      "title": "fixture.test.ts",
+      "file": "fixture.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Add to cart test_03",
+          "title": "fixture demo",
           "ok": true,
           "tags": [],
           "tests": [
@@ -109,36 +109,29 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 12066,
+                  "duration": 5,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[33m37\u001b[39m CAYOSO4147@SKRAK.COM\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-01T13:26:18.879Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Add-to-cart-test-03-chromium/test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Add-to-cart-test-03-chromium/video.webm"
-                    }
-                  ]
+                  "startTime": "2024-10-01T13:48:23.368Z",
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "7fd058b15c0ca70151c1-ae69a40d4cfd7b58bf2e",
-          "file": "addToCart.test.ts",
-          "line": 36,
-          "column": 6
+          "id": "2c61fb23b15e957795a2-f36e8a6ec726efc3d09b",
+          "file": "fixture.test.ts",
+          "line": 3,
+          "column": 5
         },
         {
-          "title": "Add to cart test_03",
+          "title": "fixture demo",
           "ok": true,
           "tags": [],
           "tests": [
@@ -152,37 +145,30 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 13410,
+                  "duration": 4,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[33m37\u001b[39m CAYOSO4147@SKRAK.COM\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-01T13:26:18.875Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Add-to-cart-test-03-firefox/test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Add-to-cart-test-03-firefox/video.webm"
-                    }
-                  ]
+                  "startTime": "2024-10-01T13:48:23.368Z",
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "7fd058b15c0ca70151c1-00b1d6514b5decce7851",
-          "file": "addToCart.test.ts",
-          "line": 36,
-          "column": 6
+          "id": "2c61fb23b15e957795a2-5c83cc9ac103113aabad",
+          "file": "fixture.test.ts",
+          "line": 3,
+          "column": 5
         },
         {
-          "title": "Add to cart test_03",
-          "ok": false,
+          "title": "fixture demo",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -194,42 +180,38 @@
               "results": [
                 {
                   "workerIndex": 2,
-                  "status": "failed",
+                  "status": "passed",
                   "duration": 5,
-                  "error": {
-                    "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
-                    "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
-                  },
-                  "errors": [
+                  "errors": [],
+                  "stdout": [
                     {
-                      "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
+                      "text": "\u001b[33m37\u001b[39m CAYOSO4147@SKRAK.COM\n"
                     }
                   ],
-                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-01T13:26:18.872Z",
+                  "startTime": "2024-10-01T13:48:23.367Z",
                   "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "7fd058b15c0ca70151c1-3217fbf665c9a2cc4375",
-          "file": "addToCart.test.ts",
-          "line": 36,
-          "column": 6
+          "id": "2c61fb23b15e957795a2-3946a12683c3d92a0591",
+          "file": "fixture.test.ts",
+          "line": 3,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-10-01T13:26:18.443Z",
-    "duration": 14964.384000000002,
-    "expected": 2,
+    "startTime": "2024-10-01T13:48:22.988Z",
+    "duration": 407.966,
+    "expected": 3,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

@@ -45,4 +45,6 @@ https://www.lambdatest.com/selenium-playground/generate-file-to-download-demo
 ## jQuery File Upload Demo  
 https://blueimp.github.io/jQuery-File-Upload/  
   
-## 
+## Fixtures  
+https://playwright.dev/docs/test-fixtures  
+ 
