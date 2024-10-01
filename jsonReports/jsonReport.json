@@ -95,7 +95,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "Login test_02",
+          "title": "Add to cart test_03",
           "ok": true,
           "tags": [],
           "tests": [
@@ -109,22 +109,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 6339,
+                  "duration": 12066,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-01T12:40:22.749Z",
+                  "startTime": "2024-10-01T13:26:18.879Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Login-test-02-chromium/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Add-to-cart-test-03-chromium/test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Login-test-02-chromium/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Add-to-cart-test-03-chromium/video.webm"
                     }
                   ]
                 }
@@ -132,13 +132,13 @@
               "status": "expected"
             }
           ],
-          "id": "7fd058b15c0ca70151c1-4d94a31d4cbc223ef6f5",
+          "id": "7fd058b15c0ca70151c1-ae69a40d4cfd7b58bf2e",
           "file": "addToCart.test.ts",
-          "line": 26,
+          "line": 36,
           "column": 6
         },
         {
-          "title": "Login test_02",
+          "title": "Add to cart test_03",
           "ok": true,
           "tags": [],
           "tests": [
@@ -152,22 +152,22 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 7453,
+                  "duration": 13410,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-01T12:40:22.757Z",
+                  "startTime": "2024-10-01T13:26:18.875Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Login-test-02-firefox/test-finished-1.png"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Add-to-cart-test-03-firefox/test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Login-test-02-firefox/video.webm"
+                      "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCart-Add-to-cart-test-03-firefox/video.webm"
                     }
                   ]
                 }
@@ -175,13 +175,13 @@
               "status": "expected"
             }
           ],
-          "id": "7fd058b15c0ca70151c1-face35d47d7c1673e7b9",
+          "id": "7fd058b15c0ca70151c1-00b1d6514b5decce7851",
           "file": "addToCart.test.ts",
-          "line": 26,
+          "line": 36,
           "column": 6
         },
         {
-          "title": "Login test_02",
+          "title": "Add to cart test_03",
           "ok": false,
           "tags": [],
           "tests": [
@@ -195,7 +195,7 @@
                 {
                   "workerIndex": 2,
                   "status": "failed",
-                  "duration": 4,
+                  "duration": 5,
                   "error": {
                     "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
                     "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
@@ -208,16 +208,16 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-01T12:40:22.747Z",
+                  "startTime": "2024-10-01T13:26:18.872Z",
                   "attachments": []
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "7fd058b15c0ca70151c1-e02417fdc71d9d03a618",
+          "id": "7fd058b15c0ca70151c1-3217fbf665c9a2cc4375",
           "file": "addToCart.test.ts",
-          "line": 26,
+          "line": 36,
           "column": 6
         }
       ]
@@ -225,8 +225,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-10-01T12:40:22.353Z",
-    "duration": 8878.16,
+    "startTime": "2024-10-01T13:26:18.443Z",
+    "duration": 14964.384000000002,
     "expected": 2,
     "skipped": 0,
     "unexpected": 1,

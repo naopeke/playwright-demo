@@ -1,8 +1,12 @@
 import { Page } from "@playwright/test";
 
 export default class LoginPage {
-    constructor(public page: Page){
-        
+    constructor(public page: Page){}
+
+    async login(email: string, password: string){
+        await this.enterEmail(email);
+        await this.enterPassword(password);
+        await this.clickLoginBtn();
     }
 
     async enterEmail(email: string){
