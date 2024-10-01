@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "../base/pomFixture";
 import RegisterPage from "../pages/registerPage";
 import LoginPage from "../pages/loginPage";
 import HomePage from "../pages/homePage";
@@ -9,46 +9,42 @@ const password = "123456";
 
 test.describe("Page Object Model", async () =>{
 
-    // test.use({
-    //     baseURL:"https://ecommerce-playground.lambdatest.io/index.php?"
-    // })
-
-    test("Register test_01", async ({ page, baseURL })=>{
+    test("Register test_01", async ({ page, baseURL, registerPage})=>{
     
-        const register = new RegisterPage(page);
+        // const register = new RegisterPage(page);
         await page.goto(`${baseURL}route=account/register`);
-        await register.enterFirstName("Pepe");
-        await register.enterLastName("Lopez");
-        await register.enterEmail(email);
-        await register.enterTelephone("1234567890");
-        await register.enterPassword(password);
-        await register.enterConfirmPassword(password);
-        expect (await register.isSubscribeChecked()).toBe(true); //toBeChecked() is depricated
-        await register.clickTermAndCondition();
-        await register.clickContinueToRegister();
+        await registerPage.enterFirstName("Pepe");
+        await registerPage.enterLastName("Lopez");
+        await registerPage.enterEmail(email);
+        await registerPage.enterTelephone("1234567890");
+        await registerPage.enterPassword(password);
+        await registerPage.enterConfirmPassword(password);
+        expect (await registerPage.isSubscribeChecked()).toBe(true); //toBeChecked() is depricated
+        await registerPage.clickTermAndCondition();
+        await registerPage.clickContinueToRegister();
     })
     
     
-    test("Login test_02", async ({ page, baseURL })=>{
-        const login = new LoginPage(page);
+    test("Login test_02", async ({ page, baseURL, loginPage })=>{
+        // const login = new LoginPage(page);
         await page.goto(`${baseURL}route=account/login`);
-        await login.enterEmail(email);
-        await login.enterPassword(password);
-        await login.clickLoginBtn();
+        await loginPage.enterEmail(email);
+        await loginPage.enterPassword(password);
+        await loginPage.clickLoginBtn();
         expect(await page.title()).toBe("My Account");
     })
     
     
-    test("Add to cart test_03", async ({ page, baseURL }) =>{
-        const login = new LoginPage(page);
-        const homePage = new HomePage(page);
-        const special = new SpecialHotPage(page);
+    test("Add to cart test_03", async ({ page, baseURL, loginPage, homePage, specialPage }) =>{
+        // const login = new LoginPage(page);
+        // const homePage = new HomePage(page);
+        // const special = new SpecialHotPage(page);
         await page.goto(`${baseURL}route=account/login`);
-        await login.login(email, password);
+        await loginPage.login(email, password);
         await homePage.clickOnSpecialHotMenu();
-        await special.chooseTablets();
-        await special.addFirstProductToTheCart();
-        const isCartVisible = await special.isToastVisible();
+        await specialPage.chooseTablets();
+        await specialPage.addFirstProductToTheCart();
+        const isCartVisible = await specialPage.isToastVisible();
         expect(isCartVisible).toBeVisible();
     })
 

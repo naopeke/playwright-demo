@@ -12,7 +12,7 @@ type pages = {
 }
 
 const testPages = baseTest.extend<pages>({
-    
+
     registerPage: async ({ page }, use) => {
         await use(new RegisterPage(page));
     },
@@ -28,3 +28,4 @@ const testPages = baseTest.extend<pages>({
 })
 
 export const test = testPages;
+export const expect = testPages.expect;
