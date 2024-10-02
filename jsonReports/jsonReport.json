@@ -96,7 +96,7 @@
       "specs": [
         {
           "title": "Login test demo",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -108,22 +108,46 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 10352,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 1113,
+                  "error": {
+                    "message": "Internal Server Error: browserType.connect: Unauthorized, either Username or AccessKey is invalid.",
+                    "stack": "Internal Server Error: browserType.connect: Unauthorized, either Username or AccessKey is invalid.\n    at /home/naopeke/Bootcamp/playwight-demo/tests/loginWithCrossBrowser.test.ts:29:36",
+                    "location": {
+                      "file": "/home/naopeke/Bootcamp/playwight-demo/tests/loginWithCrossBrowser.test.ts",
+                      "column": 36,
+                      "line": 29
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m test(\u001b[32m\"Login test demo\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 28 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mconst\u001b[39m browser \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m chromium\u001b[33m.\u001b[39mconnect(\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m         \u001b[32m`wss://cdp.lambdatest.com/playwright?capabilities=\u001b[39m\n \u001b[90m 31 |\u001b[39m \u001b[32m        ${encodeURIComponent(JSON.stringify(capabilities)\u001b[39m\n \u001b[90m 32 |\u001b[39m \u001b[32m        )}`\u001b[39m\u001b[33m,\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/naopeke/Bootcamp/playwight-demo/tests/loginWithCrossBrowser.test.ts",
+                        "column": 36,
+                        "line": 29
+                      },
+                      "message": "Internal Server Error: browserType.connect: Unauthorized, either Username or AccessKey is invalid.\n\n\u001b[0m \u001b[90m 27 |\u001b[39m test(\u001b[32m\"Login test demo\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 28 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mconst\u001b[39m browser \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m chromium\u001b[33m.\u001b[39mconnect(\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m         \u001b[32m`wss://cdp.lambdatest.com/playwright?capabilities=\u001b[39m\n \u001b[90m 31 |\u001b[39m \u001b[32m        ${encodeURIComponent(JSON.stringify(capabilities)\u001b[39m\n \u001b[90m 32 |\u001b[39m \u001b[32m        )}`\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\n\u001b[2m    at /home/naopeke/Bootcamp/playwight-demo/tests/loginWithCrossBrowser.test.ts:29:36\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-02T09:32:32.297Z",
-                  "attachments": []
+                  "startTime": "2024-10-02T10:07:33.049Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/home/naopeke/Bootcamp/playwight-demo/tests/loginWithCrossBrowser.test.ts",
+                    "column": 36,
+                    "line": 29
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
           "id": "dfe59429d6e00d11f5eb-eed0b8fa3fcc658524a7",
           "file": "loginWithCrossBrowser.test.ts",
-          "line": 3,
+          "line": 27,
           "column": 5
         }
       ]
@@ -131,11 +155,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-10-02T09:32:31.944Z",
-    "duration": 10722.244999999999,
-    "expected": 1,
+    "startTime": "2024-10-02T10:07:32.749Z",
+    "duration": 1438.244,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
