@@ -1,7 +1,7 @@
 {
   "config": {
     "configFile": "/home/naopeke/Bootcamp/playwight-demo/playwright.config.ts",
-    "rootDir": "/home/naopeke/Bootcamp/playwight-demo/pomTest",
+    "rootDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 8
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -45,10 +45,10 @@
         "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "/home/naopeke/Bootcamp/playwight-demo/pomTest",
+        "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
         "testIgnore": [],
         "testMatch": [
-          "pomTest/addToCartUsingFixture.test.ts"
+          "tests/loginWithCrossBrowser.test.ts"
         ],
         "timeout": 30000
       },
@@ -59,10 +59,10 @@
         "metadata": {},
         "id": "firefox",
         "name": "firefox",
-        "testDir": "/home/naopeke/Bootcamp/playwight-demo/pomTest",
+        "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
         "testIgnore": [],
         "testMatch": [
-          "pomTest/addToCartUsingFixture.test.ts"
+          "tests/loginWithCrossBrowser.test.ts"
         ],
         "timeout": 30000
       },
@@ -73,10 +73,10 @@
         "metadata": {},
         "id": "webkit",
         "name": "webkit",
-        "testDir": "/home/naopeke/Bootcamp/playwight-demo/pomTest",
+        "testDir": "/home/naopeke/Bootcamp/playwight-demo/tests",
         "testIgnore": [],
         "testMatch": [
-          "pomTest/addToCartUsingFixture.test.ts"
+          "tests/loginWithCrossBrowser.test.ts"
         ],
         "timeout": 30000
       }
@@ -89,408 +89,53 @@
   },
   "suites": [
     {
-      "title": "addToCartUsingFixture.test.ts",
-      "file": "addToCartUsingFixture.test.ts",
+      "title": "loginWithCrossBrowser.test.ts",
+      "file": "loginWithCrossBrowser.test.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Page Object Model",
-          "file": "addToCartUsingFixture.test.ts",
-          "line": 10,
-          "column": 6,
-          "specs": [
+          "title": "Login test demo",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "Register test_01",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 12345,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-10-02T08:53:14.942Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCartUsingFixture-Page-Object-Model-Register-test-01-chromium/test-finished-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCartUsingFixture-Page-Object-Model-Register-test-01-chromium/video.webm"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 10352,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-10-02T09:32:32.297Z",
+                  "attachments": []
                 }
               ],
-              "id": "23a4a57a8f3b3565b855-8d69e3a9050cbc99675c",
-              "file": "addToCartUsingFixture.test.ts",
-              "line": 12,
-              "column": 9
-            },
-            {
-              "title": "Login test_02",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "status": "passed",
-                      "duration": 7368,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-10-02T08:53:14.914Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCartUsingFixture-Page-Object-Model-Login-test-02-chromium/test-finished-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCartUsingFixture-Page-Object-Model-Login-test-02-chromium/video.webm"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "23a4a57a8f3b3565b855-061c4d39b19a5a9951a2",
-              "file": "addToCartUsingFixture.test.ts",
-              "line": 28,
-              "column": 9
-            },
-            {
-              "title": "Add to cart test_03",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "status": "passed",
-                      "duration": 12913,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-10-02T08:53:14.878Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCartUsingFixture-Page-Object-Model-Add-to-cart-test-03-chromium/test-finished-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCartUsingFixture-Page-Object-Model-Add-to-cart-test-03-chromium/video.webm"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "23a4a57a8f3b3565b855-3e0d7418193379017a97",
-              "file": "addToCartUsingFixture.test.ts",
-              "line": 38,
-              "column": 9
-            },
-            {
-              "title": "Register test_01",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "status": "passed",
-                      "duration": 12902,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-10-02T08:53:14.974Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCartUsingFixture-Page-Object-Model-Register-test-01-firefox/test-finished-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCartUsingFixture-Page-Object-Model-Register-test-01-firefox/video.webm"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "23a4a57a8f3b3565b855-ecfe607c4ca7d34dd33e",
-              "file": "addToCartUsingFixture.test.ts",
-              "line": 12,
-              "column": 9
-            },
-            {
-              "title": "Login test_02",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 8021,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-10-02T08:53:14.868Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCartUsingFixture-Page-Object-Model-Login-test-02-firefox/test-finished-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCartUsingFixture-Page-Object-Model-Login-test-02-firefox/video.webm"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "23a4a57a8f3b3565b855-81f62f250bfe3e27c157",
-              "file": "addToCartUsingFixture.test.ts",
-              "line": 28,
-              "column": 9
-            },
-            {
-              "title": "Add to cart test_03",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "status": "passed",
-                      "duration": 13284,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-10-02T08:53:14.933Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCartUsingFixture-Page-Object-Model-Add-to-cart-test-03-firefox/test-finished-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/home/naopeke/Bootcamp/playwight-demo/test-results/addToCartUsingFixture-Page-Object-Model-Add-to-cart-test-03-firefox/video.webm"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "23a4a57a8f3b3565b855-b43603776aef0656deeb",
-              "file": "addToCartUsingFixture.test.ts",
-              "line": 38,
-              "column": 9
-            },
-            {
-              "title": "Register test_01",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "status": "failed",
-                      "duration": 6,
-                      "error": {
-                        "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
-                        "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
-                      },
-                      "errors": [
-                        {
-                          "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-10-02T08:53:14.950Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "23a4a57a8f3b3565b855-355fd1475a6f3dcfd6c0",
-              "file": "addToCartUsingFixture.test.ts",
-              "line": 12,
-              "column": 9
-            },
-            {
-              "title": "Login test_02",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "status": "failed",
-                      "duration": 7,
-                      "error": {
-                        "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
-                        "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
-                      },
-                      "errors": [
-                        {
-                          "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-10-02T08:53:15.009Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "23a4a57a8f3b3565b855-0d52c3fc24d2126f9bf0",
-              "file": "addToCartUsingFixture.test.ts",
-              "line": 28,
-              "column": 9
-            },
-            {
-              "title": "Add to cart test_03",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "status": "failed",
-                      "duration": 7,
-                      "error": {
-                        "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝",
-                        "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
-                      },
-                      "errors": [
-                        {
-                          "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Please install them with the following command:      ║\n║                                                      ║\n║     sudo npx playwright install-deps                 ║\n║                                                      ║\n║ Alternatively, use apt:                              ║\n║     sudo apt-get install libevent-2.1-7              ║\n║                                                      ║\n║ <3 Playwright Team                                   ║\n╚══════════════════════════════════════════════════════╝"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-10-02T08:53:15.777Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "23a4a57a8f3b3565b855-6d334e86083bd980aa8a",
-              "file": "addToCartUsingFixture.test.ts",
-              "line": 38,
-              "column": 9
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "dfe59429d6e00d11f5eb-eed0b8fa3fcc658524a7",
+          "file": "loginWithCrossBrowser.test.ts",
+          "line": 3,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-10-02T08:53:14.345Z",
-    "duration": 15760.091,
-    "expected": 6,
+    "startTime": "2024-10-02T09:32:31.944Z",
+    "duration": 10722.244999999999,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 3,
+    "unexpected": 0,
     "flaky": 0
   }
 }

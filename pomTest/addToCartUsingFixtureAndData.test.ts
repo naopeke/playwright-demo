@@ -4,6 +4,10 @@ import * as data from "../test-data/addToCart-test-data.json"
 // const email = "cayoso4147@skrak.com";
 // const password = "123456";
 
+// test.use({
+//     browserName: "firefox"
+// })
+
 test.describe("Page Object Model", async () =>{
 
     test("Register test_01", async ({ page, baseURL, registerPage})=>{

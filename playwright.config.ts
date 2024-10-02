@@ -11,7 +11,7 @@ import { defineConfig, devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: './pomTest',
+  testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -77,5 +77,5 @@ export default defineConfig({
   // },
 
   /* 実行するテストファイルを指定 npx playwright testで表示*/
-  testMatch: ["pomTest/addToCartUsingFixture.test.ts"],
+  testMatch: ["tests/loginWithCrossBrowser.test.ts"],
 });
